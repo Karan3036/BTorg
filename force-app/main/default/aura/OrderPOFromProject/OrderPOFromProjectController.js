@@ -788,7 +788,10 @@
 		component.set("v.isExpanded", isExpanded);
 	},
 
-	
+	onclicknun: function(component, event, helper) {
+		component.set("v.emailnun", false);
+		component.set("v.emailwrite", true);
+	},
 	
 	
 

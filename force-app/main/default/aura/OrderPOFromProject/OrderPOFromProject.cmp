@@ -74,6 +74,8 @@
     <aura:attribute name="orgCurr" type="string" />
 
     <aura:attribute name="disableOrder" type="Boolean" default="false" />
+    <aura:attribute name="emailnun" type="Boolean" default="true" />
+    <aura:attribute name="emailwrite" type="Boolean" default="false" />
     
     
     <!--   Attributes to attach documents  End   -->
@@ -533,9 +535,28 @@
                                                     <ui:outputText value="{!row.buildertek__Vendor__r.buildertek__Email_Address__c}" /> 
                                                     
                                                     <aura:set attribute="else">
-                                                        <h1 style = "color:red;">
+                                                        <!-- <h1 style = "color:red;">
                                                             There is no Email for this Vendor                                                        
-                                                        </h1>
+                                                        </h1> -->
+                                                        <aura:if isTrue="{!v.emailnun}">
+                                                            <h1 style = "color:red;" onclick="{!c.onclicknun}">
+                                                            There is no Email for this Vendor                                                        
+                                                        </h1>                                                          
+                                                        </aura:if>
+                                                        <aura:if isTrue="{!v.emailwrite}">
+                                                            <!-- <h1 style = "color:Green;">
+                                                            There is no Email for this Vendor                                                        
+                                                        </h1>                                                           -->
+                                                        <div class="tableTitleCol">
+                                                            <div class="slds-truncate titlename">
+                                                                <div class="slds-col slds-grid slds-wrap rename_div">
+                                                                    <lightning:input type="text" value="{!v.formname}" onchange="{!c.rename}" class="rename_input" />
+                                                                    <div class="right" onclick="{!c.renameForm}"><img src="{!$Resource.right}" alt="" /></div>
+                                                                    <div class="wrong" onclick="{!c.cancleRenameForm}"><img src="{!$Resource.cross}" alt="" /></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </aura:if>
                                                     </aura:set>
                                                 </aura:if>
                                                 <aura:set attribute="else">
