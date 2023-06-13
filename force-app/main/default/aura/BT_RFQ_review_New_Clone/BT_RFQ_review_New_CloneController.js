@@ -1379,75 +1379,110 @@ $A.enqueueAction(action);*/
     },
 
     compare: function(component, event, helper) {
-        $A.get("e.c:BT_SpinnerEvent").setParams({
-            "action": "SHOW"
-        }).fire();
-        component.set("v.IsOnLoad", false);
-        var vendorList = component.get("v.rfqToVendorList");
-        var selectedvendors = component.get('v.selectedVendorList');
-        var selectedVendor = selectedvendors.filter(function(getSelected) {
-            return getSelected.buildertek__IS_VENDOR_SELECTED__c == true;
+        var action;
+        action = component.get("c.getRFQline");
+        action.setParams({
+            "RFQid": component.get("v.recordId")
         });
-        var dynamicClass = '';
-        var dynamicStyle = '';
-        if (selectedVendor != undefined && selectedVendor.length > 1 && selectedVendor.length <= 6) {
-            if (selectedVendor.length == 2) {
-                dynamicClass = 'slds-col slds-size_1-of-2';
-                dynamicStyle = 'width:49%;margin:1px;';
-            } else if (selectedVendor.length == 3) {
-                dynamicClass = 'slds-col slds-size_1-of-3';
-                dynamicStyle = 'width:33%;margin:1px;';
-            } else if (selectedVendor.length == 4) {
-                dynamicClass = 'slds-col slds-size_1-of-4';
-                dynamicStyle = 'width:24.6%;margin:1px;';
-            } else if (selectedVendor.length == 5) {
-                dynamicClass = '';
-                dynamicStyle = 'margin:1px;';
-            } else if (selectedVendor.length == 6) {
-                dynamicClass = '';
-                dynamicStyle = 'margin:1px;';
-            }
 
-            //* slice Name of vendor items to render properly in table
-            selectedVendor.forEach(element => {
-                element.buildertek__Vendor_Items__r.forEach(ele => {
-                    if(ele.Name.length > 35){
-                        ele.Name = ele.Name.slice(0,35)+'...';
-                    }
+        action.setCallback(this, function(response) {
+            var state = response.getState();
+            
+            if (state === "SUCCESS") {
+                var result = response.getReturnValue();
+                if (result === "success") {
+                console.log('error if');
+                $A.get("e.c:BT_SpinnerEvent").setParams({
+                    "action": "SHOW"
+                }).fire();
+                component.set("v.IsOnLoad", false);
+                var vendorList = component.get("v.rfqToVendorList");
+                var selectedvendors = component.get('v.selectedVendorList');
+                var selectedVendor = selectedvendors.filter(function(getSelected) {
+                    return getSelected.buildertek__IS_VENDOR_SELECTED__c == true;
                 });
-            });
-            component.set('v.dynamicStyle', dynamicStyle);
-            component.set('v.dynamicClass', dynamicClass);
-            component.set("v.isComparePopupOpen", true);
-            component.set("v.showVendorActions", false);
-            component.set('v.selectedVendor', selectedVendor);
-            $A.get("e.c:BT_SpinnerEvent").setParams({
-                "action": "HIDE"
-            }).fire();
-        } else if (selectedVendor.length > 6) {
-            $A.get("e.c:BT_SpinnerEvent").setParams({
-                "action": "HIDE"
-            }).fire();
-            var errorMessage = 'You cannot compare more than 6 vendors';
-            var toastEvent = $A.get("e.force:showToast");
-            toastEvent.setParams({
-                message: errorMessage,
-                type: 'warning',
-            });
-            toastEvent.fire();
-        } else {
-            var toastEvent = $A.get("e.force:showToast");
-            toastEvent.setParams({
-                "type": "error",
-                "title": "Error!",
-                "message": "Please select at least two Vendors."
-            });
-            toastEvent.fire();
-            $A.get("e.c:BT_SpinnerEvent").setParams({
-                "action": "HIDE"
-            }).fire();
-            $A.get('e.force:refreshView').fire();
+                var dynamicClass = '';
+                var dynamicStyle = '';
+                if (selectedVendor != undefined && selectedVendor.length > 1 && selectedVendor.length <= 6) {
+                    if (selectedVendor.length == 2) {
+                        dynamicClass = 'slds-col slds-size_1-of-2';
+                        dynamicStyle = 'width:49%;margin:1px;';
+                    } else if (selectedVendor.length == 3) {
+                        dynamicClass = 'slds-col slds-size_1-of-3';
+                        dynamicStyle = 'width:33%;margin:1px;';
+                    } else if (selectedVendor.length == 4) {
+                        dynamicClass = 'slds-col slds-size_1-of-4';
+                        dynamicStyle = 'width:24.6%;margin:1px;';
+                    } else if (selectedVendor.length == 5) {
+                        dynamicClass = '';
+                        dynamicStyle = 'margin:1px;';
+                    } else if (selectedVendor.length == 6) {
+                        dynamicClass = '';
+                        dynamicStyle = 'margin:1px;';
+                    }
+        
+                    //* slice Name of vendor items to render properly in table
+                    selectedVendor.forEach(element => {
+                        element.buildertek__Vendor_Items__r.forEach(ele => {
+                            if(ele.Name.length > 35){
+                                ele.Name = ele.Name.slice(0,35)+'...';
+                            }
+                        });
+                    });
+                    component.set('v.dynamicStyle', dynamicStyle);
+                    component.set('v.dynamicClass', dynamicClass);
+                    component.set("v.isComparePopupOpen", true);
+                    component.set("v.showVendorActions", false);
+                    component.set('v.selectedVendor', selectedVendor);
+                    $A.get("e.c:BT_SpinnerEvent").setParams({
+                        "action": "HIDE"
+                    }).fire();
+                } else if (selectedVendor.length > 6) {
+                    $A.get("e.c:BT_SpinnerEvent").setParams({
+                        "action": "HIDE"
+                    }).fire();
+                    var errorMessage = 'You cannot compare more than 6 vendors';
+                    var toastEvent = $A.get("e.force:showToast");
+                    toastEvent.setParams({
+                        message: errorMessage,
+                        type: 'warning',
+                    });
+                    toastEvent.fire();
+                } else {
+                    var toastEvent = $A.get("e.force:showToast");
+                    toastEvent.setParams({
+                        "type": "error",
+                        "title": "Error!",
+                        "message": "Please select at least two Vendors."
+                    });
+                    toastEvent.fire();
+                    $A.get("e.c:BT_SpinnerEvent").setParams({
+                        "action": "HIDE"
+                    }).fire();
+                    $A.get('e.force:refreshView').fire();
+                }
+                
+            } else{
+                console.log('error else');
+                var toastEvent = $A.get("e.force:showToast");
+                    toastEvent.setParams({
+                        "type": "error",
+                        "title": "Error!",
+                        "message": "There is no RFQ Line is present."
+                    });
+                    toastEvent.fire();
+                    $A.get("e.c:BT_SpinnerEvent").setParams({
+                        "action": "HIDE"
+                    }).fire();
+                    $A.get('e.force:refreshView').fire();
+            }
         }
+        });
+        
+        $A.enqueueAction(action);
+    
+
+        
 
     },
     closeModel: function(component, event, helper) {

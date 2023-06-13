@@ -2804,5 +2804,16 @@ return vendor;
         return 'success';
 
     }
+    @AuraEnabled
+    public static string getRFQline(Id RFQid){
+        List<buildertek__RFQ_Item__c>  btItems = [SELECT Id FROM buildertek__RFQ_Item__c WHERE buildertek__RFQ_Package__c =: RFQid];
+        if (btItems.isEmpty()) {
+            return 'fail';
+        } else {
+            return 'success';
+        }
+
+    }
+
     
 }
