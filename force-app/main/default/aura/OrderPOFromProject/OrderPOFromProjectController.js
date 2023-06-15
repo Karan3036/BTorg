@@ -790,14 +790,19 @@
 	},
 
 	onclicknun: function(component, event, helper) {
-		component.set("v.emailnun", false);
-		component.set("v.emailwrite", true);
+		var POId = event.currentTarget.dataset.index;
+		var vendorList = component.get("v.SelectedPurchaseOrders");
+		for (var i = 0; i < vendorList.length; i++) {
+			if (vendorList[i].Id === POId) {
+		        component.set("v.selectedRowId", POId);
+			}
+		}
 	},
 	
 	cancleadd: function(component, event, helper) {
-		component.set("v.emailnun", true);
-		component.set("v.emailwrite", false);
+		component.set("v.selectedRowId", null);
 		component.set("v.emailid", "");
+		component.set("v.errorMessage", "");
 	},
 
 	addemail: function(component, event, helper) {
@@ -809,6 +814,7 @@
 		if (emailPattern.test(email)) {
 			component.set("v.Spinner2", true);
 			component.set("v.errorMessage", "");
+			component.set("v.emailid", "");
 
 			var action = component.get("c.addEmail");
 			action.setParams({
@@ -821,12 +827,6 @@
 				if (state === "SUCCESS") {
                     var a = component.get('c.orderPO');
                     $A.enqueueAction(a);
-					component.set("v.selectedPOList", false);
-					component.set("v.emailnun", false);
-					component.set("v.emailwrite", false);
-					component.set("v.emailid", "");
-					// var a = component.get('c.orderPO');
-                    // $A.enqueueAction(a);
                     var vendorList = component.get("v.SelectedPurchaseOrders");
 					for (var i = 0; i < vendorList.length; i++) {
 						if (vendorList[i].buildertek__Vendor__c === POId) {
@@ -848,12 +848,9 @@
 			});
 	
 			$A.enqueueAction(action);
-	
-			// Clear any previous error message, if any
 			
 		} else {
 			console.log('in else condition');
-			// Display an error message for invalid email
 			component.set("v.errorMessage", "Invalid email format");
 		}
 	},
