@@ -1,0 +1,2441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AWS_Access_Key_Id_Configuration</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AWS Access Key Id Configuration</shortDescription>
+        <value>AWS Access Key Id</value>
+    </labels>
+    <labels>
+        <fullName>AWS_Access_Key_Id_Configuration_Description</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AWS Access Key Id Configuration Description</shortDescription>
+        <value>AWS Access Key Id provided by Amazon for authentication of Amazon webservices. If you don&apos;t have Access Key Id, follow &apos;File Control Amazon Sign Up Guide&apos; document.</value>
+    </labels>
+    <labels>
+        <fullName>AWS_Secret_Key_Configuration</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AWS Secret Key Configuration</shortDescription>
+        <value>AWS Secret Key</value>
+    </labels>
+    <labels>
+        <fullName>AWS_Secret_Key_Configuration_Description</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AWS Secret Key Configuration Description</shortDescription>
+        <value>AWS Secret Key provided by Amazon for authentication of Amazon webservices. If you don&apos;t have Secret Key, follow &apos;File Control Amazon Sign Up Guide&apos; document.</value>
+    </labels>
+    <labels>
+        <fullName>AWS_URL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AWS URL</shortDescription>
+        <value>&lt;a href =&quot;https://btservice360-dev-ed--c.na35.visual.force.com/&quot;&gt;https://btservice360-dev-ed--c.na35.visual.force.com/&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Access_Level</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Access Level</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>Accounts_Node_Title</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Accounts Node Title</shortDescription>
+        <value>Accounts</value>
+    </labels>
+    <labels>
+        <fullName>Action</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Action</shortDescription>
+        <value>Action</value>
+    </labels>
+    <labels>
+        <fullName>Add</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add</shortDescription>
+        <value>Add</value>
+    </labels>
+    <labels>
+        <fullName>Add_Files_Button</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add File(s) Button</shortDescription>
+        <value>Add File(s)</value>
+    </labels>
+    <labels>
+        <fullName>Add_Recipients_Button</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Add Recipient(s) Button</shortDescription>
+        <value>Add Recipient(s)</value>
+    </labels>
+    <labels>
+        <fullName>All</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>All</shortDescription>
+        <value>all</value>
+    </labels>
+    <labels>
+        <fullName>Anyone_With_Delete_Permission</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Anyone With Delete Permission</shortDescription>
+        <value>Anyone with delete permission</value>
+    </labels>
+    <labels>
+        <fullName>Available</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Available</shortDescription>
+        <value>Available</value>
+    </labels>
+    <labels>
+        <fullName>BT_Weather_API_Access_Token</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BT Weather API Access Token</shortDescription>
+        <value>cc34443009c55561d5537442a58120ea</value>
+    </labels>
+    <labels>
+        <fullName>BT_Weather_API_URL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BT Weather API URL</shortDescription>
+        <value>https://api.openweathermap.org/</value>
+    </labels>
+    <labels>
+        <fullName>BoxParentFolderId</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BoxParentFolderId</shortDescription>
+        <value>145638255140</value>
+    </labels>
+    <labels>
+        <fullName>Browse</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Browse</shortDescription>
+        <value>Browse</value>
+    </labels>
+    <labels>
+        <fullName>Bucket_Delete_Validation</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bucket Delete Validation</shortDescription>
+        <value>You are trying to delete folder which is Amazon bucket. Only System Admin can delete Amazon Bucket.</value>
+    </labels>
+    <labels>
+        <fullName>Bucket_Section_Header</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bucket Section Header</shortDescription>
+        <value>Buckets for File Upload</value>
+    </labels>
+    <labels>
+        <fullName>Buckets_Section_Header</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Buckets Section Header</shortDescription>
+        <value>AWS Buckets</value>
+    </labels>
+    <labels>
+        <fullName>Buckets_for_File_Upload_Missing_Error</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Buckets for File Upload Missing Error</shortDescription>
+        <value>Bucket for file upload is missing. Please select atleast one bucket.</value>
+    </labels>
+    <labels>
+        <fullName>Budget_Product_Select_info_message</fullName>
+        <categories>Budget</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Budget Product Select info message</shortDescription>
+        <value>Select Product(s) to add in Budget</value>
+    </labels>
+    <labels>
+        <fullName>By</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>By</shortDescription>
+        <value>by</value>
+    </labels>
+    <labels>
+        <fullName>Cancel</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_Be_Empty_Warning</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cannot Be Empty Warning</shortDescription>
+        <value>cannot be empty.</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_File_Button</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup File Button</shortDescription>
+        <value>Delete file(s) from System</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_File_Job_Started_Message</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup File Job Started Message</shortDescription>
+        <value>Your job to cleanup file(s) has been queued. You will be notified by email once it&apos;s completed.</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_File_Job_Status_Body</fullName>
+        <categories>File Control Job Status Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup File Job Status Body</shortDescription>
+        <value>Your cleanup file(s) job is successfully completed.</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_File_Job_Status_Subject</fullName>
+        <categories>File Control Job Status Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup File Job Status Subject</shortDescription>
+        <value>Your Cleanup File Job Status</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_Files</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup Files</shortDescription>
+        <value>Cleanup Files</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_Files_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup Files Description</shortDescription>
+        <value>Remove file(s) and folder(s) into your system which are no longer exists on Amazon Server.</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_Files_Job_Queued_Message</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup Files Job Queued Message</shortDescription>
+        <value>A job for cleanup files is already in queue. Try after some time.</value>
+    </labels>
+    <labels>
+        <fullName>Cleanup_Files_Message</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cleanup Files Message</shortDescription>
+        <value>Below files are no longer exists in Amazon Server. If you want to remove it from your system, select it from tree and click &apos;Delete file(s) from System&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Close</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Close</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>CloseOutProjectTemplate</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CloseOut Project Email Template</shortDescription>
+        <value>Invoice (AR) w/ Change Orders</value>
+    </labels>
+    <labels>
+        <fullName>Close_Window_Message</fullName>
+        <categories>File Control File Download Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Close Window Message</shortDescription>
+        <value>To close the window, click Close.</value>
+    </labels>
+    <labels>
+        <fullName>Company_Logo</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Company Logo</shortDescription>
+        <value>BuildettekLogo</value>
+    </labels>
+    <labels>
+        <fullName>Configuration</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Configuration</shortDescription>
+        <value>Configuration</value>
+    </labels>
+    <labels>
+        <fullName>ConfirmatioPageSiteURL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ConfirmatioPageSiteURL</shortDescription>
+        <value>https://builderteklightning-developer-edition.na75.force.com/</value>
+    </labels>
+    <labels>
+        <fullName>Contacts_Node_Title</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contacts Node Title</shortDescription>
+        <value>Contacts</value>
+    </labels>
+    <labels>
+        <fullName>Copied</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copied</shortDescription>
+        <value>Copied</value>
+    </labels>
+    <labels>
+        <fullName>Copy</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copy</shortDescription>
+        <value>Copy</value>
+    </labels>
+    <labels>
+        <fullName>Copy_Limit_Exceed</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Copy Limit Exceed</shortDescription>
+        <value>You cannot copy more data because you can copy or move only upto 100 files at a time. Remove few files or folders and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Create</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create</shortDescription>
+        <value>Create</value>
+    </labels>
+    <labels>
+        <fullName>Create_New_Bucket</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Create New Bucket</shortDescription>
+        <value>Create New Bucket</value>
+    </labels>
+    <labels>
+        <fullName>Created</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Created</shortDescription>
+        <value>Created</value>
+    </labels>
+    <labels>
+        <fullName>Credentials_Section_Header</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Credentials Section Header</shortDescription>
+        <value>AWS Credentials</value>
+    </labels>
+    <labels>
+        <fullName>Cut</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Cut</shortDescription>
+        <value>Cut</value>
+    </labels>
+    <labels>
+        <fullName>Delete</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Confirmation</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Confirmation</shortDescription>
+        <value>Delete Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Confirmation_Message</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Confirmation Message</shortDescription>
+        <value>Are you sure you want to delete</value>
+    </labels>
+    <labels>
+        <fullName>Delete_File_Confirmation</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete File Confirmation</shortDescription>
+        <value>This file will be deleted from Amazon cloud storage. Are you sure you want to delete this file?</value>
+    </labels>
+    <labels>
+        <fullName>Delete_Folder_Confirmation</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Delete Folder Confirmation</shortDescription>
+        <value>Along with this folder all its subfolders and files will be deleted from Amazon cloud storage. Are you sure you want to delete this folder?</value>
+    </labels>
+    <labels>
+        <fullName>Description</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Description</shortDescription>
+        <value>Description</value>
+    </labels>
+    <labels>
+        <fullName>Detail</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Detail</shortDescription>
+        <value>Detail</value>
+    </labels>
+    <labels>
+        <fullName>Download</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Download</shortDescription>
+        <value>Download</value>
+    </labels>
+    <labels>
+        <fullName>Download_Access_Missing_For_Grantee_Warning</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Download Access Missing For Grantee Warning</shortDescription>
+        <value>Download access is required for Grantee.</value>
+    </labels>
+    <labels>
+        <fullName>Downloading</fullName>
+        <categories>File Control File Download Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Downloading</shortDescription>
+        <value>Processing in progress. Do not close browser window or do not use the Back/Forward/Refresh button on your browser as this may end your file downloading. You can close this window once file downloading initialized.</value>
+    </labels>
+    <labels>
+        <fullName>Downloads</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Downloads</shortDescription>
+        <value>Downloads</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_File_Name_Message</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate File Name Message</shortDescription>
+        <value>File name {0} already exists in the current folder. Try with different name.</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Folder_Name_Message</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate Folder Name Message</shortDescription>
+        <value>Folder name {0} already exists in the current folder. Try with different name.</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Records_Popup_Header</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate Records Popup Header</shortDescription>
+        <value>Following Files / Folders already exist</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Replace_Helptext</fullName>
+        <categories>File Control File Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate Replace Helptext</shortDescription>
+        <value>File with same name already exist on this folder. Provide different file name or &quot;Replace&quot;. &quot;Replace&quot; will delete existing file and insert new one.</value>
+    </labels>
+    <labels>
+        <fullName>Duplicate_Replace_Message</fullName>
+        <categories>File Control File Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Duplicate Replace Message</shortDescription>
+        <value>Already exist, Replace?</value>
+    </labels>
+    <labels>
+        <fullName>Edit</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Edit</shortDescription>
+        <value>Edit</value>
+    </labels>
+    <labels>
+        <fullName>Email</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>Email_Content</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Content</shortDescription>
+        <value>Hi {!Recipient.Name},
+&lt;br/&gt;
+&lt;br/&gt;
+{!Body}
+&lt;br/&gt;
+&lt;br/&gt;
+Note: You need to login in salesforce to download file(s) which are private. For public file, you can download it directly by clicking below link(s). If there is any problem in dowloading that means you don&apos;t have access for that file. Ask system admin to grant access for those files.&lt;br/&gt;
+&lt;br/&gt;&lt;br/&gt;Thank You,&lt;br/&gt;&lt;br/&gt;
+{!Sender.Name}</value>
+    </labels>
+    <labels>
+        <fullName>Email_Files</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Files</shortDescription>
+        <value>Email Files</value>
+    </labels>
+    <labels>
+        <fullName>Email_Files_Message</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Files Message</shortDescription>
+        <value>Select files to send. Also select email recipients. Download link will be sent in email so users can download those files by clicking download link provided in email.</value>
+    </labels>
+    <labels>
+        <fullName>Email_Files_Page_Subtitle</fullName>
+        <categories>File Control Page Subtitles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Files Page Subtitle</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>Email_Files_to_Users</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Files to Users</shortDescription>
+        <value>Email Files to Users</value>
+    </labels>
+    <labels>
+        <fullName>Email_Files_to_Users_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Files to Users Description</shortDescription>
+        <value>Forward the download link for file(s) to user(s) through email.</value>
+    </labels>
+    <labels>
+        <fullName>Email_Note</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Note</shortDescription>
+        <value>Note: To download files, click on &quot;Download&quot;. If there is any problem, contact your system admin.</value>
+    </labels>
+    <labels>
+        <fullName>Email_Subject</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email Subject</shortDescription>
+        <value>Subject</value>
+    </labels>
+    <labels>
+        <fullName>Empty_Field</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Empty Field</shortDescription>
+        <value>Field is empty.</value>
+    </labels>
+    <labels>
+        <fullName>Error</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Error</shortDescription>
+        <value>Error</value>
+    </labels>
+    <labels>
+        <fullName>Error_While_Reading_File</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>[Depricated]Error While Reading File</shortDescription>
+        <value>An error occurred reading this file</value>
+    </labels>
+    <labels>
+        <fullName>Expiry_Date</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Expiry Date</shortDescription>
+        <value>Expiry Date</value>
+    </labels>
+    <labels>
+        <fullName>False</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>False</shortDescription>
+        <value>False</value>
+    </labels>
+    <labels>
+        <fullName>Field_Not_Valid_For_Object</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Field Not Valid For Object</shortDescription>
+        <value>Field {0} not valid for object {1}</value>
+    </labels>
+    <labels>
+        <fullName>Fields</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Fields</shortDescription>
+        <value>Fields</value>
+    </labels>
+    <labels>
+        <fullName>File_Access_Control_Configuration_Warning</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Access Control Configuration Warning</shortDescription>
+        <value>File Access Control(s) are not properly configured.</value>
+    </labels>
+    <labels>
+        <fullName>File_Administration</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Administration</shortDescription>
+        <value>File Administration</value>
+    </labels>
+    <labels>
+        <fullName>File_Administrative_Fields</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Administrative Fields</shortDescription>
+        <value>File Administrative Fields</value>
+    </labels>
+    <labels>
+        <fullName>File_Already_Exists</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File already exists</shortDescription>
+        <value>File already exists.</value>
+    </labels>
+    <labels>
+        <fullName>File_Control</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Control</shortDescription>
+        <value>File Control</value>
+    </labels>
+    <labels>
+        <fullName>File_Control_Administration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Control Administration</shortDescription>
+        <value>BT Administration</value>
+    </labels>
+    <labels>
+        <fullName>File_Control_System_Configuration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Control System Configuration</shortDescription>
+        <value>File Control System Configuration</value>
+    </labels>
+    <labels>
+        <fullName>File_Download</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Download</shortDescription>
+        <value>File Download</value>
+    </labels>
+    <labels>
+        <fullName>File_Download_History</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Download History</shortDescription>
+        <value>File Dowload History</value>
+    </labels>
+    <labels>
+        <fullName>File_Edit</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Edit</shortDescription>
+        <value>File Edit</value>
+    </labels>
+    <labels>
+        <fullName>File_Exlorer_Tree_Description</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Exlorer Tree Description</shortDescription>
+        <value>This tree is used in File Explorer page.</value>
+    </labels>
+    <labels>
+        <fullName>File_Explorer</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Explorer</shortDescription>
+        <value>File Explorer</value>
+    </labels>
+    <labels>
+        <fullName>File_Explorer_Configuration</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Explorer Configuration</shortDescription>
+        <value>File Explorer Configuration</value>
+    </labels>
+    <labels>
+        <fullName>File_Explorer_Configuration_Page_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Explorer Configuration Page Description</shortDescription>
+        <value>Configure File Explorer Interface for your org.</value>
+    </labels>
+    <labels>
+        <fullName>File_Explorer_Configuration_Subtitle</fullName>
+        <categories>File Control Page Subtitles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Explorer Configuration Subtitle</shortDescription>
+        <value>File Explorer Interface</value>
+    </labels>
+    <labels>
+        <fullName>File_Explorer_Name_Helptext</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Explorer Name Helptext</shortDescription>
+        <value>Select Object for which you would like to change file explorer configuration.</value>
+    </labels>
+    <labels>
+        <fullName>File_Explorer_Page_Configuration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Explorer Page Configuration</shortDescription>
+        <value>File Explorer Page Configuration</value>
+    </labels>
+    <labels>
+        <fullName>File_Explorer_Page_Configuration_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Explorer Page Configuration Description</shortDescription>
+        <value>Configure File Explorer Interface for your organization.</value>
+    </labels>
+    <labels>
+        <fullName>File_Management_Configuration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Management Configuration</shortDescription>
+        <value>File Management Configuration</value>
+    </labels>
+    <labels>
+        <fullName>File_Management_Configuration_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Management Configuration Description</shortDescription>
+        <value>Configure file management settings such as allow to delete file.</value>
+    </labels>
+    <labels>
+        <fullName>File_Name_Helptext</fullName>
+        <categories>File Control File Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Name Helptext</shortDescription>
+        <value>Name of file. It cannot contain special characters like &quot;&lt;&quot;, &quot;&gt;&quot;, &quot;?&quot;, &quot;/&quot; or &quot;&amp;&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>File_Name_Is_Missing</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File name is missing</shortDescription>
+        <value>File name is missing.</value>
+    </labels>
+    <labels>
+        <fullName>File_Name_Too_Long_Error</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Name Too Long Error</shortDescription>
+        <value>File Name cannot be longer than 80 characters.</value>
+    </labels>
+    <labels>
+        <fullName>File_Not_Found</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Not Found!</shortDescription>
+        <value>File Not Found!</value>
+    </labels>
+    <labels>
+        <fullName>File_Not_Uploaded_To_Amazon_Server</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Not Uploaded To Amazon Server</shortDescription>
+        <value>File is still not uploaded to Amazon Server.</value>
+    </labels>
+    <labels>
+        <fullName>File_Picker_Tree_Description</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Picker Tree Description</shortDescription>
+        <value>This is used in Send Email page.</value>
+    </labels>
+    <labels>
+        <fullName>File_Read_Cancelled</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>[Depricated]File Read Cancelled</shortDescription>
+        <value>File read cancelled.</value>
+    </labels>
+    <labels>
+        <fullName>File_Sharing</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Sharing</shortDescription>
+        <value>File Sharing</value>
+    </labels>
+    <labels>
+        <fullName>File_To_Upload</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File to Upload:</shortDescription>
+        <value>File</value>
+    </labels>
+    <labels>
+        <fullName>File_Upload_Configuration_Page_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Upload Configuration Page Description</shortDescription>
+        <value>Configure default values for new file.</value>
+    </labels>
+    <labels>
+        <fullName>File_Upload_Configuration_Subtitle</fullName>
+        <categories>File Control Page Subtitles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Upload Configuration Subtitle</shortDescription>
+        <value>File Upload Page</value>
+    </labels>
+    <labels>
+        <fullName>File_Upload_Page_Configuration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Upload Page Configuration</shortDescription>
+        <value>File Upload Page Configuration</value>
+    </labels>
+    <labels>
+        <fullName>File_Upload_Status</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File_Upload_Status</shortDescription>
+        <value>Status</value>
+    </labels>
+    <labels>
+        <fullName>File_Upload_Status_Helptext</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Upload Status Helptext</shortDescription>
+        <value>File is uploaded to Amazon Server.</value>
+    </labels>
+    <labels>
+        <fullName>File_Uploaded_Message</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File Uploaded Message</shortDescription>
+        <value>Uploaded</value>
+    </labels>
+    <labels>
+        <fullName>File_Uploaded_Succesfully</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>File uploaded succesfully</shortDescription>
+        <value>File uploaded succesfully.</value>
+    </labels>
+    <labels>
+        <fullName>File_is_not_readable</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>[Depricated]File is not readable</shortDescription>
+        <value>File is not readable</value>
+    </labels>
+    <labels>
+        <fullName>Filter</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>First_Page</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Page</shortDescription>
+        <value>First Page</value>
+    </labels>
+    <labels>
+        <fullName>Folder</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Folder</shortDescription>
+        <value>Folder</value>
+    </labels>
+    <labels>
+        <fullName>Folder_Already_Exists</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Folder already exists</shortDescription>
+        <value>Folder already exists.</value>
+    </labels>
+    <labels>
+        <fullName>Folder_Is_Empty</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This folder is empty.</shortDescription>
+        <value>No records to display</value>
+    </labels>
+    <labels>
+        <fullName>Folder_Name_Is_Missing</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Folder name is missing</shortDescription>
+        <value>Folder name is missing.</value>
+    </labels>
+    <labels>
+        <fullName>Folder_Path</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Folder Path</shortDescription>
+        <value>Folder Path</value>
+    </labels>
+    <labels>
+        <fullName>Glazier_Resources</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Glazier Resources</shortDescription>
+        <value>https://view.com/training/glaziers</value>
+    </labels>
+    <labels>
+        <fullName>Grantee_Missing_Warning</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Grantee Missing Warning</shortDescription>
+        <value>Grantee cannot be empty.</value>
+    </labels>
+    <labels>
+        <fullName>Grantees</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Grantees</shortDescription>
+        <value>Grantees</value>
+    </labels>
+    <labels>
+        <fullName>Group</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group</shortDescription>
+        <value>Group</value>
+    </labels>
+    <labels>
+        <fullName>Group_Id_Missing_Error</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group Id Missing Error</shortDescription>
+        <value>Select a public group to manage group members.</value>
+    </labels>
+    <labels>
+        <fullName>Group_Management</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group Management</shortDescription>
+        <value>Group Management</value>
+    </labels>
+    <labels>
+        <fullName>Group_Management_Access_Error</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group Management Access Error</shortDescription>
+        <value>Only System Admin can add/remove group members.</value>
+    </labels>
+    <labels>
+        <fullName>Group_Management_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Group Management Description</shortDescription>
+        <value>Manage group members for all your public groups.</value>
+    </labels>
+    <labels>
+        <fullName>Groups_Node_Title</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Groups Node Title</shortDescription>
+        <value>Groups</value>
+    </labels>
+    <labels>
+        <fullName>Hide</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hide</shortDescription>
+        <value>Hide -</value>
+    </labels>
+    <labels>
+        <fullName>Hide_Bucket_In_File_Explorer_Helptext</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Hide Bucket In File Explorer Helptext</shortDescription>
+        <value>Click here if you don&apos;t want to display this bucket on file explorer page.</value>
+    </labels>
+    <labels>
+        <fullName>Home</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Home</shortDescription>
+        <value>Home</value>
+    </labels>
+    <labels>
+        <fullName>Id</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Id</shortDescription>
+        <value>Id</value>
+    </labels>
+    <labels>
+        <fullName>Illegal_Argument</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Illegal Argument</shortDescription>
+        <value>Illegal argument:  Field is empty</value>
+    </labels>
+    <labels>
+        <fullName>Illegal_operator</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Illegal operator</shortDescription>
+        <value>Illegal operator:</value>
+    </labels>
+    <labels>
+        <fullName>Import_File_Button</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import File Button</shortDescription>
+        <value>Import file(s) from Amazon</value>
+    </labels>
+    <labels>
+        <fullName>Import_File_Job_Status_Body</fullName>
+        <categories>File Control Job Status Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import File Job Status Body</shortDescription>
+        <value>Your import file(s) job is successfully completed.</value>
+    </labels>
+    <labels>
+        <fullName>Import_File_Job_Status_Subject</fullName>
+        <categories>File Control Job Status Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import File Job Status Subject</shortDescription>
+        <value>Your Import File Job Status</value>
+    </labels>
+    <labels>
+        <fullName>Import_Files</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Files</shortDescription>
+        <value>Import Files</value>
+    </labels>
+    <labels>
+        <fullName>Import_Files_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Files Description</shortDescription>
+        <value>Import file(s) and folder(s) into your system from Amazon Server.</value>
+    </labels>
+    <labels>
+        <fullName>Import_Files_Job_Queued_Message</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Files Job Queued Message</shortDescription>
+        <value>A job for import files is already in queue. Try after some time.</value>
+    </labels>
+    <labels>
+        <fullName>Import_Files_Message</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Import Files Message</shortDescription>
+        <value>Below files are available on Amazon Server and don&apos;t exists on your system. Import from Amazon and let your users use them.</value>
+    </labels>
+    <labels>
+        <fullName>Imprort_File_Job_Started_Message</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Imprort File Job Started Message</shortDescription>
+        <value>Your job to import file(s) has been queued. You will be notified by email once it&apos;s completed.</value>
+    </labels>
+    <labels>
+        <fullName>Initialize_Admin_Configuration_Button</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialize Admin Configuration Button</shortDescription>
+        <value>Initialize Admin Configuration Page</value>
+    </labels>
+    <labels>
+        <fullName>Initialize_Admin_Configuration_Message</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialize Admin Configuration Message</shortDescription>
+        <value>Your Admin configuration page is not initialized. Before you can start using the BuilderTek application, you need to initialize the admin configuration page. Click &apos;Initialize Admin Configuration Page&apos;.</value>
+    </labels>
+    <labels>
+        <fullName>Initialize_New_Org_Button</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialize New Org Button</shortDescription>
+        <value>Initialize the New Org</value>
+    </labels>
+    <labels>
+        <fullName>Initialize_New_Org_Message</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Initialize New Org Message</shortDescription>
+        <value>Your salesforce org is not initialized with BuilderTek system. Before you can start using the BuilderTek application, you need to initialize your org with system data. Click on “Initialize the New Org” button to initialize the org with BuilderTek  data.</value>
+    </labels>
+    <labels>
+        <fullName>Insufficient_Access_Rights</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient Access Rights</shortDescription>
+        <value>Insufficient access rights.</value>
+    </labels>
+    <labels>
+        <fullName>Insufficient_Priviledes_For_Requested_Operation_Warning</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Insufficient Priviledes For Requested Operation Warning</shortDescription>
+        <value>Insufficient privileges to perform the operation you requested.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_AWS_Access_Keys_Warning</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid AWS Access Keys Warning</shortDescription>
+        <value>AWS Access Key Id or Secret Key is invalid.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Bucket_Name</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid Bucket Name</shortDescription>
+        <value>Invalid bucket name.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Download_Link_Warning</fullName>
+        <categories>File Control File Download Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid Download Link Warning</shortDescription>
+        <value>Download link is invalid.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_File_Name_Message</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid File Name Message</shortDescription>
+        <value>The file name you provided cannot contain special characters like &quot;&lt;&quot;, &quot;&gt;&quot;, &quot;?&quot;, &quot;/&quot; or &quot;&amp;&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Max_File_Size_Warning</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid Max File Size Warning</shortDescription>
+        <value>Max file size is invalid.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Primary_Object_Field_API_Name</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid Primary Object Field API Name</shortDescription>
+        <value>Primary Object Field API Name is invalid. Make sure you don&apos;t manipulate any URL parameters.</value>
+    </labels>
+    <labels>
+        <fullName>Invalid_Secondary_Object_Field_API_Name</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Invalid Secondary Object Field API Name</shortDescription>
+        <value>Secondary Object Field API Name is invalid. Make sure you don&apos;t manipulate any URL parameters.</value>
+    </labels>
+    <labels>
+        <fullName>Items</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Items</shortDescription>
+        <value>items</value>
+    </labels>
+    <labels>
+        <fullName>Job_Status_From_Email_Address_Configuration</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Job Status From Email Address Configuration</shortDescription>
+        <value>&quot;From&quot; Email Address for Job Status</value>
+    </labels>
+    <labels>
+        <fullName>Job_Status_From_Email_Address_Configuration_Description</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Job Status From Email Address Configuration Description</shortDescription>
+        <value>Email address to be use as &quot;From&quot; while sending job status emails. You can use one of the organization wide email addresses configured at Your Name | Setup | Administration Setup | Email Administration | Organization-wide Addresses.</value>
+    </labels>
+    <labels>
+        <fullName>Keyword</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Keyword</shortDescription>
+        <value>Keyword</value>
+    </labels>
+    <labels>
+        <fullName>Last_Page</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last Page</shortDescription>
+        <value>Last Page</value>
+    </labels>
+    <labels>
+        <fullName>Link_Amazon_Buckets</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Link Amazon Buckets</shortDescription>
+        <value>Link Amazon Buckets</value>
+    </labels>
+    <labels>
+        <fullName>Link_Bucket_Helptext</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Link Bucket Helptext</shortDescription>
+        <value>Link buckets which already exist on Amazon Server to Salesforce.</value>
+    </labels>
+    <labels>
+        <fullName>Login_Required</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Login Required</shortDescription>
+        <value>Login?</value>
+    </labels>
+    <labels>
+        <fullName>Manage_Group_Members</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Manage Group Members</shortDescription>
+        <value>Manage Group members</value>
+    </labels>
+    <labels>
+        <fullName>Manual_File_Download_Message</fullName>
+        <categories>File Control File Download Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Manual File Download Message</shortDescription>
+        <value>If there is some issue with the file download, you can manually download it by clicking &quot;Download&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Copy_Limit_Exceed</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mass Copy Limit Exceed</shortDescription>
+        <value>You can copy or move only upto 100 files at a time. Remove few files or folders and try again.</value>
+    </labels>
+    <labels>
+        <fullName>Mass_Delete_Confirmation</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Mass Delete Confirmation</shortDescription>
+        <value>All selected files and folders along with their subfolders and file will be deleted from Amazon cloud storage. Are you sure you want to delete these files and folders?</value>
+    </labels>
+    <labels>
+        <fullName>Max_File_Size_Configuration</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Max File Size Configuration</shortDescription>
+        <value>Max File Size (KB)</value>
+    </labels>
+    <labels>
+        <fullName>Max_File_Size_Configuration_Description</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Max File Size Configuration Description</shortDescription>
+        <value>Users will be able to upload files up to this size. Leave it empty if you don&apos;t want to enforce any limit.</value>
+    </labels>
+    <labels>
+        <fullName>Max_File_Size_Error</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>[Depricated]Max File Size Error</shortDescription>
+        <value>File is too longer.</value>
+    </labels>
+    <labels>
+        <fullName>Max_File_Size_Message</fullName>
+        <categories>File Control File Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Max File Size Message</shortDescription>
+        <value>Max :</value>
+    </labels>
+    <labels>
+        <fullName>Max_Records_Message</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Max Records Message</shortDescription>
+        <value>There are {0}+ records. Displayed first {1} records. Narrow your &quot;Search&quot; to refine search result.</value>
+    </labels>
+    <labels>
+        <fullName>Missing_Root_Node_For_Tree_Request</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Missing Root Node For Tree Request</shortDescription>
+        <value>Missing root node id for the tree request</value>
+    </labels>
+    <labels>
+        <fullName>My</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>My</shortDescription>
+        <value>my</value>
+    </labels>
+    <labels>
+        <fullName>Name</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>New</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>New_Bucket_Helptext</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Bucket Helptext</shortDescription>
+        <value>Create new bucket in Amazon Server and use it.</value>
+    </labels>
+    <labels>
+        <fullName>New_Bucket_Name_Helptext</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Bucket Name Helptext</shortDescription>
+        <value>The bucket name can be between 3 and 63 characters long, and can contain only lower-case characters, numbers, periods, and dashes.Each label in the bucket name must start with a lowercase letter or number.The bucket name cannot contain underscores, end with a dash, have consecutive periods, or use dashes adjacent to periods.The bucket name cannot be formatted as an IP address.</value>
+    </labels>
+    <labels>
+        <fullName>New_Folder</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>New Folder</shortDescription>
+        <value>New Folder</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>No</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No</shortDescription>
+        <value>No</value>
+    </labels>
+    <labels>
+        <fullName>No_Access_To_Add_Subfolder_Warning</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No_Access_To_Add_Subfolder_Warning</shortDescription>
+        <value>You cannot add sub folder for {0}.</value>
+    </labels>
+    <labels>
+        <fullName>No_Amazon_Key_Error</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Amazon Key Error</shortDescription>
+        <value>Error: Amazon key(s) is not provided. Please contact your System Administrator.</value>
+    </labels>
+    <labels>
+        <fullName>No_Bucket_Configured_Warning</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Bucket Configured Warning</shortDescription>
+        <value>Amazon Bucket is still not configured. Contact your System Admin.</value>
+    </labels>
+    <labels>
+        <fullName>No_Bucket_Linked_Message</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Bucket Linked Message</shortDescription>
+        <value>No amazon bucket is linked to your salesforce org. Click on above icons to link them right now.</value>
+    </labels>
+    <labels>
+        <fullName>No_Bucket_On_Amazon_Message</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Bucket On Amazon Message</shortDescription>
+        <value>No bucket found on Amazon Server.</value>
+    </labels>
+    <labels>
+        <fullName>No_File_Access_Control_Added_Message</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No File Access Control Added Message</shortDescription>
+        <value>No file access controls added.</value>
+    </labels>
+    <labels>
+        <fullName>No_File_For_Cleanup_Message</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No File For Cleanup Message</shortDescription>
+        <value>Currently there are no files that need to be cleaned up.  Your system is in sync with your Amazon Web Server.</value>
+    </labels>
+    <labels>
+        <fullName>No_File_For_Import_Message</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No File For Import Message</shortDescription>
+        <value>Currently there are no files that need imported.  Your files are in sync with your Amazon Web Server.</value>
+    </labels>
+    <labels>
+        <fullName>No_File_Selected_For_Cleanup_Warning</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No File Selected For Cleanup Warning</shortDescription>
+        <value>No file selected for cleanup.</value>
+    </labels>
+    <labels>
+        <fullName>No_File_Selected_For_Import_Warning</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No File Selected For Import Warning</shortDescription>
+        <value>No file selected to import.</value>
+    </labels>
+    <labels>
+        <fullName>No_File_Selected_Warning</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No File Selected Warning</shortDescription>
+        <value>Please select file(s).</value>
+    </labels>
+    <labels>
+        <fullName>No_Recipient_Selected_Warning</fullName>
+        <categories>File Control Email Files Page</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Recipient Selected Warning</shortDescription>
+        <value>Please select recipient(s).</value>
+    </labels>
+    <labels>
+        <fullName>No_Record_Selected</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Record Selected</shortDescription>
+        <value>No {0} selected.</value>
+    </labels>
+    <labels>
+        <fullName>No_Records_Found</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Records Found</shortDescription>
+        <value>No records found.</value>
+    </labels>
+    <labels>
+        <fullName>No_Records_Selected</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Records Selected</shortDescription>
+        <value>No records selected.</value>
+    </labels>
+    <labels>
+        <fullName>No_Search_Record_Found</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>No Search Record Found</shortDescription>
+        <value>No record found.</value>
+    </labels>
+    <labels>
+        <fullName>Non_Owner_File_Administration_Warning</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Non Owner File Administration Warning</shortDescription>
+        <value>Only file owner / admin can manage file administration.</value>
+    </labels>
+    <labels>
+        <fullName>Non_Owner_Sharing_For_Private_File_Warning</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Non Owner Sharing For Private File Warning</shortDescription>
+        <value>Only file owner can share private files with users.</value>
+    </labels>
+    <labels>
+        <fullName>Not_Set</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Not Set</shortDescription>
+        <value>Not Set</value>
+    </labels>
+    <labels>
+        <fullName>Object_Name_Not_Valid</fullName>
+        <categories>File Control Exception Message</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Object Name Not Valid</shortDescription>
+        <value>Object name {0} not valid.</value>
+    </labels>
+    <labels>
+        <fullName>Ok</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Ok</shortDescription>
+        <value>Ok</value>
+    </labels>
+    <labels>
+        <fullName>On</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>On</shortDescription>
+        <value>on</value>
+    </labels>
+    <labels>
+        <fullName>Only</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Only</shortDescription>
+        <value>only</value>
+    </labels>
+    <labels>
+        <fullName>Opration_Is_Successful</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Opration is successful.</shortDescription>
+        <value>Opration is successful.</value>
+    </labels>
+    <labels>
+        <fullName>Order_By_File_Size</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Order By File Size</shortDescription>
+        <value>Size</value>
+    </labels>
+    <labels>
+        <fullName>Order_By_Name</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Order By Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Order_By_Updated_Date</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Order By Updated Date</shortDescription>
+        <value>Updated Date</value>
+    </labels>
+    <labels>
+        <fullName>Other</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Other</shortDescription>
+        <value>Other</value>
+    </labels>
+    <labels>
+        <fullName>Page_Access_Error</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Page Access Error</shortDescription>
+        <value>Only System Admin can access configuration pages.</value>
+    </labels>
+    <labels>
+        <fullName>Page_Layout</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Page Layout</shortDescription>
+        <value>Page Layout</value>
+    </labels>
+    <labels>
+        <fullName>Paste</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Paste</shortDescription>
+        <value>Paste</value>
+    </labels>
+    <labels>
+        <fullName>Paste_Button_Helptext</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Paste Button Helptext</shortDescription>
+        <value>Click here to paste selected files and folders in this folder.</value>
+    </labels>
+    <labels>
+        <fullName>Picker</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Picker</shortDescription>
+        <value>Picker</value>
+    </labels>
+    <labels>
+        <fullName>Please_Enter_Keyword</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please Enter Keyword</shortDescription>
+        <value>Please enter keyword.</value>
+    </labels>
+    <labels>
+        <fullName>Please_Select_File</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please select file.</shortDescription>
+        <value>Please select a file.</value>
+    </labels>
+    <labels>
+        <fullName>Please_Wait</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Please Wait...</shortDescription>
+        <value>Please Wait...</value>
+    </labels>
+    <labels>
+        <fullName>PortalAccount</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PortalAccount</shortDescription>
+        <value>001x000xxx35tPN</value>
+    </labels>
+    <labels>
+        <fullName>Presigned_URL_Settings</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Presigned URL Settings</shortDescription>
+        <value>Presigned URL Settings</value>
+    </labels>
+    <labels>
+        <fullName>Previous</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Public_Group_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Public Group Description</shortDescription>
+        <value>A public group is a set of users. It can contain individual users, other groups, the users in a particular role or territory, or the users in a role or territory plus all of the users below that role or territory in the hierarchy.</value>
+    </labels>
+    <labels>
+        <fullName>Public_Groups</fullName>
+        <categories>File Control Page Titles</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Public Groups</shortDescription>
+        <value>Public Groups</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Item_info_message_with_Accepted_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Item info message with Accepted Status</shortDescription>
+        <value>This RFQ has been Accepted. You cannot modify the RFQ Items.</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Item_info_message_with_Awarded_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Item info message with Awarded Status</shortDescription>
+        <value>This RFQ has been Awarded. You cannot modify the RFQ Items.</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Item_info_message_with_New_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Item info message with New Status</shortDescription>
+        <value>Add Item(s) to RFQ. You can select items from Budget or Create New</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Item_info_message_with_Request_Sent_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Item info message with Request Sent Status</shortDescription>
+        <value>This RFQ is already sent to Vendor(s). You cannot modify the RFQ Items.</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Review_info_message_with_Accepted_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Review info message with Accepted Status</shortDescription>
+        <value>This RFQ has been Accepted</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Review_info_message_with_Awarded_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Review info message with Awarded Status</shortDescription>
+        <value>This RFQ is Awarded and pending Acceptance</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Review_info_message_with_New_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Review info message with New Status</shortDescription>
+        <value>Please review your RFQ.  Once you have completed your review, you can Award your RFQ to the appropriate Vendor.</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Vendor_info_message_with_Accepted_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Vendor info message with Accepted Status</shortDescription>
+        <value>This RFQ has been Accepted. You cannot select more vendor(s) with Accepted RFQ.</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Vendor_info_message_with_Awarded_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Vendor info message with Awarded Status</shortDescription>
+        <value>This RFQ has been Awarded. You cannot select more vendor(s) with Awarded RFQ.</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Vendor_info_message_with_New_Status</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Vendor info message with New Status</shortDescription>
+        <value>Select Vendor(s) from available Vendor list and move to selected Vendor list.</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Workflow_Step1</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Workflow Step1</shortDescription>
+        <value>RFQ Detail</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Workflow_Step2</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Workflow Step2</shortDescription>
+        <value>RFQ Item(s)</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Workflow_Step3</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Workflow Step3</shortDescription>
+        <value>Documents</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Workflow_Step4</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Workflow Step4</shortDescription>
+        <value>Vendor(s)</value>
+    </labels>
+    <labels>
+        <fullName>RFQ_Workflow_Step5</fullName>
+        <categories>RFQ</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RFQ Workflow Step5</shortDescription>
+        <value>Review Quote(s)</value>
+    </labels>
+    <labels>
+        <fullName>Record_Type</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Record_Type</shortDescription>
+        <value>Record Type</value>
+    </labels>
+    <labels>
+        <fullName>Record_owner</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Record owner</shortDescription>
+        <value>Record owner</value>
+    </labels>
+    <labels>
+        <fullName>Records</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Records</shortDescription>
+        <value>Records</value>
+    </labels>
+    <labels>
+        <fullName>Recuresive_Copy_Message</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Recuresive Copy Message</shortDescription>
+        <value>You are trying to move few folders inside itself. You cannot move folders inside itself. To skip those folders click &quot;Skip&quot;.</value>
+    </labels>
+    <labels>
+        <fullName>Remove</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Remove</shortDescription>
+        <value>Remove</value>
+    </labels>
+    <labels>
+        <fullName>Rename</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Rename</shortDescription>
+        <value>Rename</value>
+    </labels>
+    <labels>
+        <fullName>Replace_All_Button</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Replace All Button</shortDescription>
+        <value>Replace All</value>
+    </labels>
+    <labels>
+        <fullName>Replace_Button</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Replace Button</shortDescription>
+        <value>Replace</value>
+    </labels>
+    <labels>
+        <fullName>Replace_Content_and_Info_Message</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Replace Content and Info Message</shortDescription>
+        <value>Replace</value>
+    </labels>
+    <labels>
+        <fullName>Required_Field_Missing_Warning</fullName>
+        <categories>File Control Multi Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Required Field Missing Warning</shortDescription>
+        <value>Required fields cannot be empty.</value>
+    </labels>
+    <labels>
+        <fullName>Reset_to_System_Default_Button</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Reset to System Default Button</shortDescription>
+        <value>Reset to System Default</value>
+    </labels>
+    <labels>
+        <fullName>Results</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Results</shortDescription>
+        <value>Results</value>
+    </labels>
+    <labels>
+        <fullName>SOQL_Query_Error</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SOQL Query Error</shortDescription>
+        <value>Error: There is something wrong with the query to get files and folders. Make sure you don&apos;t manipulate any URL parameters.</value>
+    </labels>
+    <labels>
+        <fullName>Save</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Search</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Search_Button</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Button</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>Search_Configuration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search Configuration</shortDescription>
+        <value>Search Configuration</value>
+    </labels>
+    <labels>
+        <fullName>Search_Files_And_Folders</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Search files and folders.</shortDescription>
+        <value>Search files and folders.</value>
+    </labels>
+    <labels>
+        <fullName>Select_Atleast_One_Record_Warning</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Atleast One Record Warning</shortDescription>
+        <value>Select atleast one record.</value>
+    </labels>
+    <labels>
+        <fullName>Select_Bucket_Label</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Bucket Label</shortDescription>
+        <value>Select Bucket</value>
+    </labels>
+    <labels>
+        <fullName>Select_Button</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select Button</shortDescription>
+        <value>Select</value>
+    </labels>
+    <labels>
+        <fullName>Select_File_Helptext</fullName>
+        <categories>File Control File Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select File Helptext</shortDescription>
+        <value>Select only one file. If you will select more than one file, last selected file will be uploaded. Make sure file size does not exceed the max file size(if provided).</value>
+    </labels>
+    <labels>
+        <fullName>Select_One_Or_More_Records_To_Delete</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Select one or more records to delete</shortDescription>
+        <value>Please choose one or more record(s) to delete.</value>
+    </labels>
+    <labels>
+        <fullName>Selected</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Selected</shortDescription>
+        <value>Selected</value>
+    </labels>
+    <labels>
+        <fullName>Selected_Record_Name</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Selected Record Name</shortDescription>
+        <value>Selected {0} Name</value>
+    </labels>
+    <labels>
+        <fullName>Selected_Records_Name</fullName>
+        <categories>File Control Tree Picker Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Selected Records Name</shortDescription>
+        <value>Selected Records Name</value>
+    </labels>
+    <labels>
+        <fullName>Send</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send</shortDescription>
+        <value>Send</value>
+    </labels>
+    <labels>
+        <fullName>Send_Email_Link</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Send Email Link</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>Set_Access_Type_for_Import_Files_Label</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Set Access Type for Import Files Label</shortDescription>
+        <value>Set Access type for file(s) / folder(s) to</value>
+    </labels>
+    <labels>
+        <fullName>Settings</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Settings</shortDescription>
+        <value>Settings</value>
+    </labels>
+    <labels>
+        <fullName>Sharing</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sharing</shortDescription>
+        <value>Sharing</value>
+    </labels>
+    <labels>
+        <fullName>Sharing_For_Non_Private_File_Warning</fullName>
+        <categories>File Control Page Messages</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sharing For Non Private File Warning</shortDescription>
+        <value>Only private files can be shared with users.</value>
+    </labels>
+    <labels>
+        <fullName>Show</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Show</shortDescription>
+        <value>Show</value>
+    </labels>
+    <labels>
+        <fullName>Showing</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Showing</shortDescription>
+        <value>Showing</value>
+    </labels>
+    <labels>
+        <fullName>Sites_URL</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sites URL</shortDescription>
+        <value>https://builderteklightning-developer-edition.na75.force.com</value>
+    </labels>
+    <labels>
+        <fullName>Skip</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Skip</shortDescription>
+        <value>Skip</value>
+    </labels>
+    <labels>
+        <fullName>Sorted_By</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Sorted By</shortDescription>
+        <value>sorted by</value>
+    </labels>
+    <labels>
+        <fullName>Success</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Success</shortDescription>
+        <value>Success</value>
+    </labels>
+    <labels>
+        <fullName>System_Configuration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>System Configuration</shortDescription>
+        <value>System Configuration</value>
+    </labels>
+    <labels>
+        <fullName>System_Configuration_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>System Configuration Description</shortDescription>
+        <value>Provide AWS Access Key Id, Secret Key and other values needed to configure application for your organization.</value>
+    </labels>
+    <labels>
+        <fullName>Thank_You</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Thank You</shortDescription>
+        <value>Thank You</value>
+    </labels>
+    <labels>
+        <fullName>Titles_Node_Title</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Titles Node Title</shortDescription>
+        <value>Titles</value>
+    </labels>
+    <labels>
+        <fullName>To</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>To</shortDescription>
+        <value>To</value>
+    </labels>
+    <labels>
+        <fullName>Track_File_Downloads_Configuration</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Track File Downloads Configuration</shortDescription>
+        <value>Track File Downloads</value>
+    </labels>
+    <labels>
+        <fullName>Track_File_Downloads_Configuration_Description</fullName>
+        <categories>System Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Track File Downloads Configuration Description</shortDescription>
+        <value>If true, file owner can enable tracking  of file downloads.</value>
+    </labels>
+    <labels>
+        <fullName>Tree_Configuration</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tree Configuration</shortDescription>
+        <value>Tree Configuration</value>
+    </labels>
+    <labels>
+        <fullName>Tree_Configuration_Description</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Tree Configuration Description</shortDescription>
+        <value>Set tree configuration to configure various tree hierarchies for your organization.</value>
+    </labels>
+    <labels>
+        <fullName>True</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>True</shortDescription>
+        <value>True</value>
+    </labels>
+    <labels>
+        <fullName>Updated</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Updated</shortDescription>
+        <value>Updated</value>
+    </labels>
+    <labels>
+        <fullName>Upload</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Upload</shortDescription>
+        <value>Upload</value>
+    </labels>
+    <labels>
+        <fullName>Upload_File</fullName>
+        <categories>File Control File Explorer Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Upload File</shortDescription>
+        <value>Upload File</value>
+    </labels>
+    <labels>
+        <fullName>Uploading</fullName>
+        <categories>File Control File Upload Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Uploading</shortDescription>
+        <value>Processing in progress. Do not close browser window or do not use the Back/Forward/Refresh button on your browser as this may end your file uploading.</value>
+    </labels>
+    <labels>
+        <fullName>User_Picker_Tree_Description</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>User Picker Tree Description</shortDescription>
+        <value>This tree is used in page for sending files to through email to select Users.</value>
+    </labels>
+    <labels>
+        <fullName>Users</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>Users_Node_Title</fullName>
+        <categories>File Control Tree Configuration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Users Node Title</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>Users_With_Modify_All_Data_Permission</fullName>
+        <categories>File Control Configuration Page Labels</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Users With Modify All Data Permission</shortDescription>
+        <value>Users with &quot;Modify All Data&quot; permission</value>
+    </labels>
+    <labels>
+        <fullName>Value</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value</shortDescription>
+        <value>Value</value>
+    </labels>
+    <labels>
+        <fullName>View</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>View</shortDescription>
+        <value>View</value>
+    </labels>
+    <labels>
+        <fullName>Visible</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Visible</shortDescription>
+        <value>Visible</value>
+    </labels>
+    <labels>
+        <fullName>Warning</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Warning</shortDescription>
+        <value>Warning</value>
+    </labels>
+    <labels>
+        <fullName>Yes</fullName>
+        <categories>General</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Yes</shortDescription>
+        <value>Yes</value>
+    </labels>
+</CustomLabels>

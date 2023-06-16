@@ -90,7 +90,7 @@ global with sharing class BT_Email_Services implements Messaging.InboundEmailHan
                     
                     if(plainTextBody.contains('Action:SavePDF;')){
                         pagereference pdf;
-                        pdf = Page.buildertek__BT_GenerateQuotePDFSignature;
+                        pdf = Page.buildertek__BT_GenerateQuotePDF;
                         system.debug('*********' + pdf);
                         pdf.getParameters().put('recordId', plainTextBody.split('recordId:')[1].split(';')[0]);
                         pdf.getParameters().put('templateId', plainTextBody.split(';templateId:')[1].split(';')[0]);

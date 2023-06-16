@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Days_Open_Group__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Groups quotes based on amount of days open</description>
+    <externalId>false</externalId>
+    <formula>IF(FLOOR(Days_Open__c) &gt;= 0 &amp;&amp; FLOOR(Days_Open__c) &lt;= 06, &quot;0-6 Days&quot;,
+    IF(FLOOR(Days_Open__c) &gt; 06 &amp;&amp; FLOOR(Days_Open__c) &lt;= 20, &quot;07-20 Days&quot;,
+        IF(FLOOR(Days_Open__c) &gt; 20 &amp;&amp; FLOOR(Days_Open__c) &lt;= 50, &quot;21-50 Days&quot;,
+                    IF(Days_Open__c &gt; 50, &quot;Over 50 Days&quot;, &quot;Unknown&quot;)
+                )
+            )
+        )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Days Open Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

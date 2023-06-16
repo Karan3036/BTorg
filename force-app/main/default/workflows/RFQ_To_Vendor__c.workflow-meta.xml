@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Send_Invitation_Email_To_Vendor</fullName>
+        <description>Send RFQ Invitation Email To Vendor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BT_RFQ/RFQ_Invitation_Email</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_RFQ_Accepted_Email_To_Vendor</fullName>
+        <description>Send RFQ Accepted Email To Vendor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BT_RFQ/RFQ_Thank_You</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_RFQ_Awarded_Email_To_Vendor</fullName>
+        <description>Send RFQ Awarded Email To Vendor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BT_RFQ/RFQ_Award</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_RFQ_Rejected_Email_To_Vendor</fullName>
+        <description>Send RFQ Rejected Email To Vendor</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Contact__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BT_RFQ/RFQ_Rejected_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Reset_Send_Invitation_flag</fullName>
+        <field>Send_Invitation__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Send Invitation flag</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

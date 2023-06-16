@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Task</fullName>
+        <default>true</default>
+        <label>Task</label>
+    </customValue>
+    <customValue>
+        <fullName>Milestone</fullName>
+        <default>false</default>
+        <label>Milestone</label>
+    </customValue>
+    <customValue>
+        <fullName>Project</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Project</label>
+    </customValue>
+    <masterLabel>Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

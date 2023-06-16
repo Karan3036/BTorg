@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>RFQ_Sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>RFQ Sharing</label>
+        <sharedTo>
+            <guestUser>Demo</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Auto_Number__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Share_RFQ_to_guest</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share RFQ to guest</label>
+        <sharedTo>
+            <guestUser>BuilderTek_Vendors</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>Auto_Number__c</field>
+            <operation>notEqual</operation>
+            <value>null</value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

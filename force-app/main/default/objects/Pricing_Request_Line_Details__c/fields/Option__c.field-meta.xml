@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Option__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Option</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>$Source.Pricing_Request_Line__c</field>
+            <operation>equals</operation>
+            <valueField>Question__c.Pricing_Request_Line__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Question__c</referenceTo>
+    <relationshipLabel>BT Pricing Request Line Details</relationshipLabel>
+    <relationshipName>Pricing_Request_Line_Details</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

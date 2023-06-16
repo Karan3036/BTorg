@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Purchase_Order_Status_Email</fullName>
+        <description>Purchase Order Status Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bc@buildertek.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>BT_PO/Purchase_Order_Approved_Template</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approved_Date</fullName>
+        <field>Date_Approved__c</field>
+        <formula>TODAY()</formula>
+        <name>Approved Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_PO_RecordType</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>Existing_Purchase_Order</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update PO RecordType</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Update Approved Date</fullName>
+        <actions>
+            <name>Approved_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Purchase_Order__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Update PO RecordType</fullName>
+        <actions>
+            <name>Update_PO_RecordType</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Purchase_Order__c.RecordTypeId</field>
+            <operation>equals</operation>
+        </criteriaItems>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

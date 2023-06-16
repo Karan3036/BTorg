@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This button sends an email to the Project Manager of the Project.  Letting them know that material has been delivered.  It currently doesn&apos;t do anything more than that.</description>
+    <height>250</height>
+    <label>Material has Been Delivered</label>
+    <lightningComponent>sendEmailToProjectManager</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

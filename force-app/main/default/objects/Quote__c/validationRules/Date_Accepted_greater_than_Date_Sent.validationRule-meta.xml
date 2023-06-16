@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Accepted_greater_than_Date_Sent</fullName>
+    <active>true</active>
+    <errorConditionFormula>(DATEVALUE(Date_Accepted_by_Customer__c)&lt; Date_Sent_To_Customer__c )</errorConditionFormula>
+    <errorDisplayField>Date_Accepted_by_Customer__c</errorDisplayField>
+    <errorMessage>Date Accepted should be either equal to or greater than Date sent</errorMessage>
+</ValidationRule>

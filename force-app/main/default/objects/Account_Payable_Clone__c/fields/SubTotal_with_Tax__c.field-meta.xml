@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubTotal_with_Tax__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the rollup of the Total of of the Invoice Lines (AP) record.</inlineHelpText>
+    <label>SubTotal</label>
+    <summarizedField>Account_Payable_Item_Clone__c.Total_Amount_With_Tax__c</summarizedField>
+    <summaryForeignKey>Account_Payable_Item_Clone__c.Account_Payable_Clone__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

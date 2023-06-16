@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingGuestRules>
+        <fullName>Quote_Rules</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Quote Rules</label>
+        <sharedTo>
+            <guestUser>BuilderTek_Customer_Community</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Quote_sharing</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Quote sharing</label>
+        <sharedTo>
+            <guestUser>Demo</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>false</includeHVUOwnedRecords>
+    </sharingGuestRules>
+    <sharingGuestRules>
+        <fullName>Quote_site_user</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Quote site user</label>
+        <sharedTo>
+            <guestUser>Demo</guestUser>
+        </sharedTo>
+        <criteriaItems>
+            <field>CreatedById</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </criteriaItems>
+        <includeHVUOwnedRecords>true</includeHVUOwnedRecords>
+    </sharingGuestRules>
+</SharingRules>

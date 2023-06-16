@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Depending on how many days the quote has been opened, the quote will be assigned a number</description>
+    <externalId>false</externalId>
+    <formula>IF( Days_Open__c  &gt;= 0 &amp;&amp;  Days_Open__c  &lt;= 6, 1,
+IF( Days_Open__c  &gt; 6 &amp;&amp;  Days_Open__c  &lt;= 16, 2,
+IF( Days_Open__c  &gt; 15 &amp;&amp;  Days_Open__c  &lt;= 31, 3,
+IF( Days_Open__c  &gt; 31 &amp;&amp;  Days_Open__c  &lt;= 60, 4,
+IF( Days_Open__c  &gt; 60 &amp;&amp;  Days_Open__c  &lt;= 90, 5,
+6)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Group Number</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Update_Primary_Field_in_Parent</fullName>
+        <field>Primary_Assignee__c</field>
+        <formula>Employee__r.FirstName + &apos; &apos; +  Employee__r.LastName</formula>
+        <name>Update Primary Field in Parent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>Service_Request__c</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Primary History</fullName>
+        <actions>
+            <name>Update_Primary_Field_in_Parent</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <formula>OR(AND( ISNEW(),Primary__c = true), AND(ISCHANGED( Employee__c ),Primary__c = true) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

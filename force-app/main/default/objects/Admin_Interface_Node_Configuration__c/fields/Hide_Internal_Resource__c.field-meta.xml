@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hide_Internal_Resource__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This field is used for hiding internal resource columns in scheduled Gantt chart</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Hide Internal Resource Column</inlineHelpText>
+    <label>Hide Internal Resource</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

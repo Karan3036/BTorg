@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Reset_Auto_Roll_Up_Field</fullName>
+        <field>Auto_Roll_Up__c</field>
+        <literalValue>0</literalValue>
+        <name>Reset Auto Roll Up Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_Up_Approved_PO</fullName>
+        <field>Approved_PO__c</field>
+        <formula>Approved_PO_Formula__c</formula>
+        <name>Roll Up - Approved PO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_Up_New_PO</fullName>
+        <field>New_PO__c</field>
+        <formula>New_PO_Formula__c</formula>
+        <name>Roll Up - New PO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_Up_Pending_PO</fullName>
+        <field>Pending_PO__c</field>
+        <formula>Pending_PO_Formula__c</formula>
+        <name>Roll Up - Pending PO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Roll_Up_Total_PO</fullName>
+        <field>Total_PO__c</field>
+        <formula>Total_PO_Formula__c</formula>
+        <name>Roll Up - Total PO</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Roll Up PO Item Amount to Budget Item</fullName>
+        <actions>
+            <name>Reset_Auto_Roll_Up_Field</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Roll_Up_Approved_PO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Roll_Up_New_PO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Roll_Up_Pending_PO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Roll_Up_Total_PO</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>PO_Item_To_Budget_Item_Link__c.Auto_Roll_Up__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

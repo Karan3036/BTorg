@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>Cloud based invoice processing application.</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>AP-360</label>
+    <navType>Standard</navType>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Sales_Order__c</tabs>
+    <tabs>Contact_Address__c</tabs>
+    <tabs>Pre_Qual__c</tabs>
+    <tabs>Account_Payable_Item_Clone__c</tabs>
+    <tabs>Receipt_Line__c</tabs>
+    <tabs>Division__c</tabs>
+    <tabs>Finance_Transaction__c</tabs>
+    <tabs>BT_Payment__c</tabs>
+    <tabs>Questions__c</tabs>
+    <tabs>Attendee__c</tabs>
+    <tabs>Appointment__c</tabs>
+    <tabs>Payment_Request__c</tabs>
+    <tabs>Quote_Line_Sub_Group__c</tabs>
+    <tabs>Budget_Line_Sub_Group__c</tabs>
+    <tabs>CO_Item_To_Budget_Item_Link__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>AP_360_UtilityBar</utilityBar>
+</CustomApplication>

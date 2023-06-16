@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Type_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Account Type Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1000 - Assets</fullName>
+                <default>false</default>
+                <label>1000 - Assets</label>
+            </value>
+            <value>
+                <fullName>2000 - Liabilities</fullName>
+                <default>false</default>
+                <label>2000 - Liabilities</label>
+            </value>
+            <value>
+                <fullName>3000 - Net Position</fullName>
+                <default>false</default>
+                <label>3000 - Net Position</label>
+            </value>
+            <value>
+                <fullName>4000 - Budgetary</fullName>
+                <default>false</default>
+                <label>4000 - Budgetary</label>
+            </value>
+            <value>
+                <fullName>5000 - Revenue</fullName>
+                <default>false</default>
+                <label>5000 - Revenue</label>
+            </value>
+            <value>
+                <fullName>6000 - Expenses</fullName>
+                <default>false</default>
+                <label>6000 - Expenses</label>
+            </value>
+            <value>
+                <fullName>7000 - Gains/Losses/Miscellaneous Items</fullName>
+                <default>false</default>
+                <label>7000 - Gains/Losses/Miscellaneous Items</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Date_Rejected_by_Customer__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Day quote was rejected by customer</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date the Quote was rejected by the Customer.</inlineHelpText>
+    <label>Date Rejected by Customer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>
