@@ -99,11 +99,12 @@ public without sharing class ChangeOrderTriggerHandler {
                 buildertek__Budget_Item__c budgetLine = new buildertek__Budget_Item__c();
                 budgetLine.Name = newCO.Name + ' budget line';
                 budgetLine.buildertek__Budget__c = newCO.buildertek__Budget__c;
-                //3314 ticket changes
-                budgetLine.buildertek__CO_Total__c = newCO.buildertek__Total_Amount__c;
-                budgetLine.buildertek__Unit_Price__c = newCO.buildertek__Subtotal__c;
+                budgetLine.buildertek__Unit_Price__c = newCO.buildertek__Total_Costs__c;
+                // budgetLine.buildertek__Markup__c = (newCO.buildertek__Margin__c / (1 - newCO.buildertek__Margin__c));
+                if(newCO.buildertek__Calculated_Margin__c != null){
+                    budgetLine.buildertek__Markup__c = (newCO.buildertek__Calculated_Margin__c/100)/(1-(newCO.buildertek__Calculated_Margin__c/100))*100;
+                }
                 budgetLine.buildertek__Quantity__c = 1;
-                //3314 ticket changes
                 budgetLine.buildertek__Group__c = budgetLineGroupId;
                 budgetLineMap.put(newCO.Id, budgetLine);
             } 
@@ -155,8 +156,17 @@ public without sharing class ChangeOrderTriggerHandler {
                 }
             }
         }
-        
 
+        //BUIL -3336
+        for(buildertek__Change_Order__c changeOrder:updatedChangeOrder){
+            System.debug('Inside if comndition');
+            System.debug(changeOrder.buildertek__Budget_Line__c);
+            System.debug(oldChangeOrderMap.get(changeOrder.Id).buildertek__Budget_Line__c != changeOrder.buildertek__Budget_Line__c);
+            System.debug(changeOrder.buildertek__Budget__c);
+            if(changeOrder.buildertek__Budget_Line__c ==null && oldChangeOrderMap.get(changeOrder.Id).buildertek__Budget_Line__c != changeOrder.buildertek__Budget_Line__c && changeOrder.buildertek__Budget__c!=null){
+                changeOrder.buildertek__Budget__c = null;
+            }
+        }
 
     }
     
@@ -984,6 +994,47 @@ public without sharing class ChangeOrderTriggerHandler {
             }
         }
 
+    }
+
+   // 3336 Changes
+    public  void updateBudgetLineData(buildertek__Change_Order__c[] oldChangeOrder, buildertek__Change_Order__c[] updatedChangeOrder, Map<ID, buildertek__Change_Order__c> ChangeOrderMap, Map<Id, buildertek__Change_Order__c> oldChangeOrderMap){
+
+        Set<Id> budgetItemSet= new Set<Id>();
+        Set<Id> ids = changeOrderMap.keySet();
+
+
+        for(buildertek__Change_Order__c changeOrder:updatedChangeOrder){
+            if(changeOrder.buildertek__Budget_Line__c!=null && oldChangeOrderMap.get(changeOrder.Id).buildertek__Budget_Line__c != changeOrder.buildertek__Budget_Line__c){
+                System.debug('Inside if comndition');
+                System.debug(changeOrder.buildertek__Budget_Line__c);
+                budgetItemSet.add(changeOrder.buildertek__Budget_Line__c);
+            }
+
+        }
+        if(!budgetItemSet.isEmpty()){
+            List<buildertek__Budget_Item__c> budgetItemList = [Select Id , Name , buildertek__Unit_Price__c, buildertek__Markup__c, buildertek__Quantity__c , (Select Id , Name , buildertek__Calculated_Margin__c , buildertek__Total_Costs__c From Change_Orders__r Where Id=:ids) From buildertek__Budget_Item__c WHERE Id=:budgetItemSet ];
+            System.debug(budgetItemList.size());
+            if(budgetItemList.size() > 0){
+                for(buildertek__Budget_Item__c budgetItem: budgetItemList){
+
+                    for(buildertek__Change_Order__c changeOrder: budgetItem.Change_Orders__r){
+                        System.debug(budgetItem.buildertek__Unit_Price__c);
+                        System.debug(budgetItem.buildertek__Unit_Price__c);
+                        System.debug(changeOrder.Name+ 'CO NAME');
+                        budgetItem.buildertek__Unit_Price__c= changeOrder.buildertek__Total_Costs__c;
+                        budgetItem.buildertek__Markup__c=(changeOrder.buildertek__Calculated_Margin__c/100)/(1-(changeOrder.buildertek__Calculated_Margin__c/100))*100;    
+
+                        // budgetItem.buildertek__Unit_Price__c= budgetItem.buildertek__Unit_Price__c+changeOrder.buildertek__Total_Costs__c;
+                        // budgetItem.buildertek__Markup__c=budgetItem.buildertek__Markup__c+ (changeOrder.buildertek__Calculated_Margin__c/100)/(1-(changeOrder.buildertek__Calculated_Margin__c/100))*100;    
+                    }
+                }
+                update budgetItemList;
+            }
+
+        }
+
+
+       
     }
 
     
