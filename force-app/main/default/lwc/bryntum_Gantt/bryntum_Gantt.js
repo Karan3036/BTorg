@@ -646,6 +646,7 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
   droprow(e) {
     var taskIdList = this.scheduleItemIdsList;
     var taskList = this.scheduleItemsDataList;
+    console.log('takslist droprow:-'+taskList);
     var data = e.dataTransfer.getData("text");
     // Find the record ID by crawling up the DOM hierarchy
 
@@ -1714,6 +1715,7 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
           }
         }
       }
+      console.log('scheduleDataList after logic changed ',{scheduleDataList});
       this.scheduleItemsDataList = scheduleDataList;
       var formatedSchData = formatData(
         this.scheduleData,
@@ -1810,7 +1812,6 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
           ],
         },
       ];
-
       const project = new bryntum.gantt.ProjectModel({
         //enableProgressNotifications : true,
         calendar: data.project.calendar,
@@ -2007,6 +2008,7 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
                   );
                 }
               } else {
+                console.log('record.record.startDate ',record.record.startDate);
                 var sdate = new Date(record.record.startDate);
                 return (
                   months[sdate.getMonth()] +
@@ -2048,17 +2050,38 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
                 // console.log('Record of endDate =>',{record});
                 // console.log('duration>>>', record.record._data.duration);
                 // console.log('type>>>', record.record._data.type);
-                // console.log('name>>>', record.record._data.name);
                 if (
                   record.record._data.duration >= 1 &&
                   record.record._data.type == "Task" &&
                   record.record._data.name != "Milestone Complete"
-                ) {
-                  // console.log('In if conditon for enddate');
-                  var start;
-                  var endDate = new Date(record.value);
+                  ) {
+                    // console.log('In if conditon for enddate');
+                    var start;
+                    var endDate = new Date(record.value);
+                  console.log('record>>>', record.record);
+                  console.log('name>>>', record.record._data.name);
+                  console.log('ennDate ',endDate);
+                  // var start2 = new Date(record.record.originalData.startDate.getTime());
                   var start = new Date(record.record.startDate.getTime());
+
+                  // let inputDate = record.record.originalData.startDate;
+                  // console.log('inputDate ',inputDate);
+                  // let parts = inputDate.split("-"); // Split the input date into year, month, and day parts
+
+                  // let year = parts[0];
+                  // let month = parseInt(parts[1]) - 1; // Months in JavaScript are zero-based, so subtract 1
+                  // let day = parts[2];
+
+                  // var formate = new Date(year, month, day).toString();
+                  // console.log('formate ',formate);
+
+
+                  console.log('start >>>',typeof(start));
+                  // console.log('start2 >>>',typeof(start2));
+                  console.log('startDate ',record.record.startDate);
+                  console.log('startDate ',record.record.originalData.startDate);
                   var duration = record.record.duration;
+                  console.log('duration ',duration);
                   var eDate = new Date(start);
                   var eDatebefore = endDate;
                   // newly added
@@ -2611,11 +2634,11 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
             ) {
               if (editorContext.column.field == "endDate") {
                 var StartString =
-                  editorContext.record._data.startDate.getFullYear() +
+                  editorContext.record.originalData.startDate.getFullYear() +
                   "-" +
-                  Number(editorContext.record._data.startDate.getMonth() + 1) +
+                  Number(editorContext.record.originalData.startDate.getMonth() + 1) +
                   "-" +
-                  editorContext.record._data.startDate.getDate();
+                  editorContext.record.originalData.startDate.getDate();
                 var endString =
                   editorContext.value.getFullYear() +
                   "-" +
@@ -2657,7 +2680,7 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
                   editorContext.value.setMonth(dt.getMonth());
                   editorContext.value.setFullYear(dt.getFullYear());
                   var duration = 0;
-                  const date1 = new Date(editorContext.record._data.startDate);
+                  const date1 = new Date(editorContext.record.originalData.startDate);
                   const date2 = new Date(dt);
                   const diffTime = Math.abs(date2 - date1);
                   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
@@ -3102,12 +3125,14 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
             if (event.target.dataset.resource) {
               this.taskRecordId = event.record._data.id;
               this.showEditResourcePopup = true;
+              console.log('taskReocrdId:=- '+this.taskRecordId);
               this.selectedContactApiName = "buildertek__Resource__c";
               this.selectedResourceContact =
-                event.record._data.internalresource;
+              event.record._data.internalresource;
             }
           } else if (event.target.classList.contains("addinternalresource")) {
             this.taskRecordId = event.record._data.id;
+            console.log('taskReocrdId:=- '+this.taskRecordId);
             this.showEditResourcePopup = true;
             this.selectedContactApiName = "buildertek__Resource__c";
             this.selectedResourceContact = "";
@@ -3134,6 +3159,7 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
             if (event.target.dataset.resource) {
               this.taskRecordId = event.record._data.id;
               this.showEditResourcePopup = true;
+              console.log('taskReocrdId:=- '+this.taskRecordId);
               this.selectedContactApiName =
                 "buildertek__Contractor_Resource__c";
               this.selectedResourceContact =
@@ -3146,6 +3172,7 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
           } else if (event.target.classList.contains("addcontractorresource")) {
             this.taskRecordId = event.record._data.id;
             this.showEditResourcePopup = true;
+            console.log('taskReocrdId:=- '+this.taskRecordId);
             this.selectedContactApiName = "buildertek__Contractor_Resource__c";
             this.selectedResourceContact = "";
           }
@@ -3274,9 +3301,27 @@ export default class Gantt_component extends NavigationMixin(LightningElement) {
       }, 5000);
     }
   }
-  // saveWbsData(wbsValue){
-  //   console.log({wbsValue});
 
-  // }
+  onDrop({ context }) {
+    const
+        { gantt, grid }                                        = this,
+        { valid, highlightRow, parent, insertBefore, grabbed } = context;
+
+    // If drop was done in a valid location, add the task to Gantt's task store
+    if (valid) {
+        const unplannedTask = grid.getRecordFromElement(grabbed);
+
+        // Remove unplanned task from its current store
+        grid.store.remove(unplannedTask);
+
+        // Insert it to Gantt's task store
+        parent.insertChild(unplannedTask, insertBefore);
+    }
+
+    gantt.disableScrollingCloseToEdges(gantt.timeAxisSubGrid);
+
+    highlightRow?.removeCls('drag-from-grid-target-task-before');
+    gantt.features.taskTooltip.disabled = false;
+}
 
 }
