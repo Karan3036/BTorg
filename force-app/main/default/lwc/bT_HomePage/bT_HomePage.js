@@ -1,7 +1,10 @@
 import { LightningElement, track } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 import PDF_Resource from '@salesforce/resourceUrl/Releasenote';
-import designcss from '@salesforce/resourceUrl/designcss'
+import designcss from '@salesforce/resourceUrl/designcss';
+import sendemail from '@salesforce/apex/PDFController.sendemail';
+import createCase from '@salesforce/apex/PDFController.createCase';
+import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class Qf_guide2 extends LightningElement {
   @track spinnerdatatable = false;
@@ -10,6 +13,14 @@ export default class Qf_guide2 extends LightningElement {
   activeSections = ['A'];
   activeSectionsMessage = '';
   supportname;
+  name_msg = true;
+  email;
+  subject;
+  message;
+  email_msg = true;
+  Message_msg = true;
+  subject_msg = true;
+  Message_msg = true;
     
 
     handleSectionToggle(event) {
@@ -65,14 +76,7 @@ export default class Qf_guide2 extends LightningElement {
     this.supportname = event.target.value;
     this.name_msg = true;
 }
-name_msg = true;
-email;
-subject;
-message;
-email_msg = true;
-Message_msg = true;
-subject_msg = true;
-Message_msg = true;
+
 Support_email(event) {
   this.email = event.target.value;
   this.email_msg = true;
@@ -107,37 +111,46 @@ onSubmit() {
       this.Message_msg = false;
   } else {
       this.email_msg = true;
-      // sendemail({
-      //         name: this.supportname,
-      //         email: this.email,
-      //         subject: this.subject,
-      //         body: this.message,
-      //         fname: this.FName,
-      //         fbase64: this.FBase64,
-      //     })
-      //     .then(result => {
-      //         if(result == 'success'){
-      //             this.emailsend = true;
-      //             this.dispatchEvent(new CustomEvent('botclose', {
-      //                 detail: this.emailsend
-      //             }));
-      //             this.dispatchEvent(new CustomEvent('success'));
-      //         }else{
-      //             this.error_toast = true;
-      //             let toast_error_msg = 'Email was not sent, Something went wrong.';
-      //             this.template.querySelector('c-toast-component').showToast('error', toast_error_msg, 3000);
-      //         }
-      //     })
+      sendemail({
+              name: this.supportname,
+              email: this.email,
+              subject: this.subject,
+              body: this.message
+          })
+          .then(result => {
+              if(result == 'success'){
+                createCase({subject: this.subject,body: this.message});
+                this.supportname = '';
+                this.email = '';
+                this.message = '';
+                this.subject = '';
+                const event = new ShowToastEvent({
+                  title: 'Success',
+                  message: 'Action was successful!',
+                  variant: 'success',
+              });
+              this.dispatchEvent(event);
+              
+                  
+              }else{
+                const event = new ShowToastEvent({
+                  title: 'Error',
+                  message: 'An error occurred.',
+                  variant: 'error',
+              });
+              this.dispatchEvent(event);
+              }
+          })
 
-      const value = false;
-      const valueChangeEvent = new CustomEvent("valuechange", {
-          detail: {
-              value
-          }
-      });
-      this.dispatchEvent(valueChangeEvent);
+
   }
 
+}
+onClear(){
+  this.supportname = '';
+  this.email = '';
+  this.message = '';
+  this.subject = '';
 }
 
   
