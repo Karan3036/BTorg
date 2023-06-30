@@ -2034,4 +2034,5 @@ body {
 .button{
     display: flex;
     justify-content: center;
+    gap: 140px;
 }
