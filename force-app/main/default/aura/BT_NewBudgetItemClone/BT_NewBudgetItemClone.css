@@ -238,3 +238,7 @@
         overflow: auto;
     }
   }
+  .THIS .divconts{
+    max-height: 52vh;
+    overflow: auto;
+}

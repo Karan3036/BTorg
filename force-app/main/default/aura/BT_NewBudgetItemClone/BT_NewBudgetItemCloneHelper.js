@@ -2326,4 +2326,21 @@
         $A.enqueueAction(action);
     },
     
+    applyCSSBasedOnURL: function(component) {
+        var isBudget = component.get("v.isbudget");
+        console.log('isBudget',isBudget);
+        var headerDiv = component.find("headerDiv");
+        console.log('headerDiv',headerDiv);
+        
+        // Check if the current URL contains a specific keyword or phrase
+        if (isBudget) {
+            console.log('in if');
+            $A.util.addClass(headerDiv, "divconts");
+        } else {
+            console.log('in else');
+            $A.util.removeClass(headerDiv, "divconts");
+        }
+    },
+    
+    
 })
