@@ -239,6 +239,12 @@
     }
   }
   .THIS .divconts{
-    max-height: 52vh;
-    overflow: auto;
+    height: auto !important;
+    background: white;
+    border-radius: 5px;
+}
+.THIS .maincont{
+    background: white;
+    border-radius: 5px;
+    height: 100%;
 }

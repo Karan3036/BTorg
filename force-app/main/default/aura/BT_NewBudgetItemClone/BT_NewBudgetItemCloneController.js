@@ -10,6 +10,7 @@
             component.set("v.additionalUrl", additionalUrl);
         }
 
+        console.log({additionalUrl});
 
         var workspaceAPI = component.find("workspace");
         workspaceAPI.getEnclosingTabId().then((response) => {
@@ -251,6 +252,7 @@
             .catch(function (error) {
                 console.log(error);
             });
+       
     },
 
 
