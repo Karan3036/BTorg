@@ -275,7 +275,7 @@
     <div style="" class="slds-scrollable maincont" aura:id="headerDiv">
         <aura:if isTrue="{!v.isbudget}">
             <div class="slds-modal__header" style="font-size:17px; text-align: left;">
-                <a href="{!'/'+v.budgetId}" onclick="{!c.closetab}">{!v.budgetName} </a>
+                <a href="{!v.fromWhereBudgetIsOpen}" onclick="{!c.closetab}">{!v.budgetName} </a>
             </div>
         </aura:if>
         <div id="mainContainer">
