@@ -1,15 +1,21 @@
-import { LightningElement, track } from 'lwc';
+import { LightningElement, track, wire } from 'lwc';
 import { loadStyle, loadScript } from 'lightning/platformResourceLoader';
 import PDF_Resource from '@salesforce/resourceUrl/Releasenote';
+import Resource from '@salesforce/resourceUrl/Release';
+import getStaticResourceDescription from '@salesforce/apex/PDFController.getStaticResourceDescription';
 import designcss from '@salesforce/resourceUrl/designcss';
 import sendemail from '@salesforce/apex/PDFController.sendemail';
 import createCase from '@salesforce/apex/PDFController.createCase';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
+import { NavigationMixin } from 'lightning/navigation';
 
-export default class Qf_guide2 extends LightningElement {
+
+export default class Bt_HomePage extends NavigationMixin(LightningElement) {
   @track spinnerdatatable = false;
   error_toast = true;
   pdfUrl;
+  img;
+  descriptionValue;
   activeSections = ['A'];
   activeSectionsMessage = '';
   supportname;
@@ -22,6 +28,15 @@ export default class Qf_guide2 extends LightningElement {
   subject_msg = true;
 
 
+  connectedCallback() {
+    this.img = Resource;
+    this.pdfUrl = PDF_Resource;
+    document.title = 'BT Home Page';
+    loadStyle(this, designcss);
+  }
+  openPDF() {
+    window.open(this.pdfUrl);
+  }
   handleSectionToggle(event) {
     const openSections = event.detail.openSections;
 
@@ -32,12 +47,16 @@ export default class Qf_guide2 extends LightningElement {
         'Open sections: ' + openSections.join(', ');
     }
   }
-
-  connectedCallback() {
-    this.pdfUrl = PDF_Resource;
-    loadStyle(this, designcss);
+  
+  @wire(getStaticResourceDescription)
+  wiredDescription({ error, data }) {
+      if (data) {
+          this.descriptionValue = data;
+          console.log(this.descriptionValue);
+      } else if (error) {
+          console.error('Error fetching static resource description:', error);
+      }
   }
-
   renderedCallback() {
     this.template.querySelectorAll("a").forEach(element => {
       element.addEventListener("click", evt => {
@@ -106,6 +125,24 @@ export default class Qf_guide2 extends LightningElement {
       this.Message_msg = false;
     } else {
       this.email_msg = true;
+      createCase({ subject: this.subject, body: this.message })
+            .then(result => {
+              // Get the newly created record's Id
+              const recordId = result;
+              console.log('recordId',recordId);
+              // Navigate to the newly created record
+              this[NavigationMixin.Navigate]({
+                type: 'standard__recordPage',
+                attributes: {
+                    recordId: recordId,
+                    objectApiName: 'Case',
+                    actionName: 'view'
+                }
+            });
+            })
+            .catch(error => {
+              console.log('error',error);
+            });
       sendemail({
         name: this.supportname,
         email: this.email,
@@ -114,23 +151,20 @@ export default class Qf_guide2 extends LightningElement {
       })
         .then(result => {
           if (result == 'success') {
-            createCase({ subject: this.subject, body: this.message });
             this.supportname = '';
             this.email = '';
             this.message = '';
             this.subject = '';
             const event = new ShowToastEvent({
               title: 'Success',
-              message: 'Action was successful!',
+              message: 'Email Sent Successfully.',
               variant: 'success',
             });
             this.dispatchEvent(event);
-
-
           } else {
             const event = new ShowToastEvent({
               title: 'Error',
-              message: 'An error occurred.',
+              message: 'An error occurred while sending Email.',
               variant: 'error',
             });
             this.dispatchEvent(event);
