@@ -232,19 +232,16 @@
     max-height: 43vh;
     }
 }    */
-@media (min-width: 1900px) {
+@media only screen and (max-height: 1080px) {
     .THIS .divcont{
-        max-height: 38vh;
+        max-height: 37vh;
         overflow: auto;
     }
   }
   .THIS .divconts{
-    height: auto !important;
-    background: white;
-    border-radius: 5px;
+    max-height: 52vh;
+    overflow: auto;
 }
-.THIS .maincont{
-    background: white;
-    border-radius: 5px;
-    height: 100%;
-}
+/* .THIS .maincont{
+    
+} */
