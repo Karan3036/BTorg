@@ -173,6 +173,7 @@ export default class Bt_HomePage extends NavigationMixin(LightningElement) {
             this.email = '';
             this.message = '';
             this.subject = '';
+            this.filesData = [];
             const event = new ShowToastEvent({
               title: 'Success',
               message: 'Email Sent Successfully.',
@@ -203,6 +204,7 @@ export default class Bt_HomePage extends NavigationMixin(LightningElement) {
     this.email_msg = true;
     this.subject_msg = true;
     this.Message_msg = true;
+    this.filesData = [];
   }
   handleUploadFinished(event) {
     if (event.target.files.length > 0) {
