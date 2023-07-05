@@ -623,6 +623,24 @@
                                     class="message selectDropValues1" required="true"></lightning-textarea>
                                 <div class="email_error_msg" if:false={Message_msg}>Please Enter Valid Message
                                     Details..!</div>
+                                    <lightning-input label="Add Attachment" onchange={handleUploadFinished} type="file"
+                                        name="file" accept=".png , .jpeg , .jpg" class="quick_message" multiple></lightning-input>
+                                    <template if:true={filesData}>
+                                            <ul class="image-list">
+                                        <template for:each={filesData} for:item="imgName" for:index="index">
+                                                        <li key={imgName.id}>
+                                                            <div class="container">
+                                                                <div class="box box1">
+                                                                    <p>{imgName.fileName}</p>
+                                                                </div>
+                                                                <div class="box removeImage" key={imgName.fileName} data-id={index} onclick={removeReceiptImage}>
+                                                                    <img src={Cross} class="cross_img_file">
+                                                                </div>
+                                                            </div>
+                                                        </li>     
+                                        </template>
+                                            </ul>
+                                    </template>
                             <div class="button">
                             <div class="savebutton" onclick={onClear}><span>Clear</span></div>
                             <div class="savebutton" onclick={onSubmit}><span>Submit</span></div>
