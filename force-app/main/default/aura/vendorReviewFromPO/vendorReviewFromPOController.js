@@ -91,12 +91,14 @@
 
                 if (saveNnew) {
                     console.log('saveNnew ==>',saveNnew);
-                    console.log( component.find('inputFields'));
-                    console.log(component.find('inputFields').get('v.value') + 'value:::::');
+                    // component.find('inputFields').set('v.value' , ''); 
+                    $A.get('e.force:refreshView').fire();
+
                     component.find('inputFields').forEach(function(f) {
                         f.reset();
                     });
-                    component.set('v.NameOfVendorReview' , 'sakina');
+
+                    component.find('Name').set('v.value' ,'');
                     component.set("v.saveAndNew" , false);
                 }
                 else {

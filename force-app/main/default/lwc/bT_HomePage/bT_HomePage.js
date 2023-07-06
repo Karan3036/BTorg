@@ -55,15 +55,15 @@ export default class Bt_HomePage extends NavigationMixin(LightningElement) {
         'Open sections: ' + openSections.join(', ');
     }
   }
-  
+
   @wire(getStaticResourceDescription)
   wiredDescription({ error, data }) {
-      if (data) {
-          this.descriptionValue = data;
-          console.log(this.descriptionValue);
-      } else if (error) {
-          console.error('Error fetching static resource description:', error);
-      }
+    if (data) {
+      this.descriptionValue = data;
+      console.log(this.descriptionValue);
+    } else if (error) {
+      console.error('Error fetching static resource description:', error);
+    }
   }
   renderedCallback() {
     this.template.querySelectorAll("a").forEach(element => {
@@ -100,6 +100,7 @@ export default class Bt_HomePage extends NavigationMixin(LightningElement) {
 
   Support_name(event) {
     this.supportname = event.target.value;
+    this.supportname = this.supportname.trim();
     this.name_msg = true;
   }
 
@@ -109,11 +110,13 @@ export default class Bt_HomePage extends NavigationMixin(LightningElement) {
   }
   Support_message(event) {
     this.message = event.target.value;
+    this.message = this.message.trim();
     this.Message_msg = true;
 
   }
   Support_subject(event) {
     this.subject = event.target.value;
+    this.subject = this.subject.trim();
     this.subject_msg = true;
 
   }
@@ -121,43 +124,39 @@ export default class Bt_HomePage extends NavigationMixin(LightningElement) {
     this.spinnerdatatable = true;
     var pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var validation1 = pattern.test(this.email);
-    this.supportname = this.supportname.trim();
-    this.subject = this.subject.trim();
-    this.message = this.message.trim();
-    if ((this.supportname == undefined) || (this.supportname == '')) {
+    // this.supportname = this.supportname.trim();
+    // this.subject = this.subject.trim();
+    // this.message = this.message.trim();
+    if (this.supportname == undefined || this.supportname == '') {
       this.name_msg = false;
       this.spinnerdatatable = false;
     } else if (validation1 == false) {
       this.email_msg = false;
       this.spinnerdatatable = false;
-    } else if (this.subject == undefined || (this.subject == '')) {
+    } else if (this.subject == undefined || this.subject == '') {
       this.subject_msg = false;
       this.spinnerdatatable = false;
-    } else if (this.message == undefined || (this.message == '')) {
+    } else if (this.message == undefined || this.message == '') {
       this.Message_msg = false;
       this.spinnerdatatable = false;
     } else {
       this.email_msg = true;
-      console.log('this.FBase64 ',this.FBase64);
-      console.log('this.FName ',this.FName);
       createCase({ subject: this.subject, body: this.message, fname: this.FName, fbase64: this.FBase64 })
-            .then(result => {
-              // Get the newly created record's Id
-              const recordId = result;
-              console.log('recordId',recordId);
-              // Navigate to the newly created record
-              this[NavigationMixin.Navigate]({
-                type: 'standard__recordPage',
-                attributes: {
-                    recordId: recordId,
-                    objectApiName: 'Case',
-                    actionName: 'view'
-                }
-            });
-            })
-            .catch(error => {
-              console.log('error',error);
-            });
+        .then(result => {
+          this.spinnerdatatable = false;
+          const recordId = result;
+          this[NavigationMixin.Navigate]({
+            type: 'standard__recordPage',
+            attributes: {
+              recordId: recordId,
+              objectApiName: 'Case',
+              actionName: 'view'
+            }
+          });
+        })
+        .catch(error => {
+          console.log('error', error);
+        });
       sendemail({
         name: this.supportname,
         email: this.email,
@@ -208,50 +207,50 @@ export default class Bt_HomePage extends NavigationMixin(LightningElement) {
   }
   handleUploadFinished(event) {
     if (event.target.files.length > 0) {
-        for (let i = 0; i < event.target.files.length; i++) {
-            var filesize = event.target.files[i].size;
-            this.totalsize += parseInt(event.target.files[i].size);
-            if (this.totalsize > 4500000) {
-                this.totalsize = this.totalsize - filesize;
-                const event = new ShowToastEvent({
-                  title: 'Error',
-                  message: 'Image was not uploaded, Total file size exceeded the Limit.',
-                  variant: 'error',
-                });
-                this.dispatchEvent(event);
-            }
-            else {
-            let file = event.target.files[i];
-            let reader = new FileReader();
-            reader.onload = () => {
-                var base64 = reader.result.split(',')[1];
-                this.filename = file.name;
-                this.filedata = base64;
-                this.filesData.push({
-                    'fileName': file.name,
-                    'filedata': base64
-                });
-                this.FName.push(file.name);
-                this.FBase64.push(base64);
-            };
-            reader.readAsDataURL(file);
+      for (let i = 0; i < event.target.files.length; i++) {
+        var filesize = event.target.files[i].size;
+        this.totalsize += parseInt(event.target.files[i].size);
+        if (this.totalsize > 4500000) {
+          this.totalsize = this.totalsize - filesize;
+          const event = new ShowToastEvent({
+            title: 'Error',
+            message: 'Image was not uploaded, Total file size exceeded the Limit.',
+            variant: 'error',
+          });
+          this.dispatchEvent(event);
         }
+        else {
+          let file = event.target.files[i];
+          let reader = new FileReader();
+          reader.onload = () => {
+            var base64 = reader.result.split(',')[1];
+            this.filename = file.name;
+            this.filedata = base64;
+            this.filesData.push({
+              'fileName': file.name,
+              'filedata': base64
+            });
+            this.FName.push(file.name);
+            this.FBase64.push(base64);
+          };
+          reader.readAsDataURL(file);
         }
+      }
     }
-}
-removeReceiptImage(event) {
-  var index = event.currentTarget.dataset.id;
-  var binaryString = atob(this.FBase64[index]);
-  var byteArray = Uint8Array.from(binaryString, c => c.charCodeAt(0));
-  var sizeInBytes = byteArray.length;
- 
-  binaryString = parseInt(0);
-  byteArray = parseInt(0);
-  this.totalsize = parseInt(this.totalsize) - parseInt(sizeInBytes);
-  this.filesData.splice(index, 1);
-  this.FBase64.splice(index,1);
-  this.FName.splice(index,1);
-}
+  }
+  removeReceiptImage(event) {
+    var index = event.currentTarget.dataset.id;
+    var binaryString = atob(this.FBase64[index]);
+    var byteArray = Uint8Array.from(binaryString, c => c.charCodeAt(0));
+    var sizeInBytes = byteArray.length;
+
+    binaryString = parseInt(0);
+    byteArray = parseInt(0);
+    this.totalsize = parseInt(this.totalsize) - parseInt(sizeInBytes);
+    this.filesData.splice(index, 1);
+    this.FBase64.splice(index, 1);
+    this.FName.splice(index, 1);
+  }
 
 
 }
