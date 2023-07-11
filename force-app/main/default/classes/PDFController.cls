@@ -67,27 +67,23 @@ public without sharing class PDFController {
         try {
             insert newCase;
             System.debug('Case created successfully with ID: ' + newCase.Id);
-            uploadAttachments(fname, fbase64, newCase.Id);
+            for (Integer i = 0; i < fname.size(); i++) {
+                ContentVersion conVer = new ContentVersion();
+                conVer.PathOnClient = fname[i];
+                conVer.Title = fname[i];
+                conVer.VersionData = EncodingUtil.base64Decode(fbase64[i]);
+                insert conVer;
+                
+                ContentDocumentLink conDocLink = New ContentDocumentLink();
+                conDocLink.LinkedEntityId = newCase.Id;
+                conDocLink.ContentDocumentId = [SELECT ContentDocumentId FROM ContentVersion WHERE Id =:conVer.Id].ContentDocumentId;
+                conDocLink.Visibility = 'AllUsers';
+                insert conDocLink;
+            }
             return newCase.Id;
         } catch (Exception ex) {
             System.debug('Error creating case: ' + ex.getMessage());
             return null;
-        }
-    }
-
-    public static void uploadAttachments(List<String> fname, List<String> fileDataList, Id parentId) {
-        for (Integer i = 0; i < fname.size(); i++) {
-            ContentVersion conVer = new ContentVersion();
-            conVer.PathOnClient = fname[i];
-            conVer.Title = fname[i];
-            conVer.VersionData = EncodingUtil.base64Decode(fileDataList[i]);
-            insert conVer;
-            
-            ContentDocumentLink conDocLink = New ContentDocumentLink();
-            conDocLink.LinkedEntityId = parentId;
-            conDocLink.ContentDocumentId = [SELECT ContentDocumentId FROM ContentVersion WHERE Id =:conVer.Id].ContentDocumentId;
-            conDocLink.Visibility = 'AllUsers';
-            insert conDocLink;
         }
     }
 
